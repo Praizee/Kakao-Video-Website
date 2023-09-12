@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { NavbarData } from "./NavbarData.jsx"
+import BlackLogo from "../../assets"
 
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false)
@@ -9,7 +10,7 @@ const Navbar = () => {
     <div className="navbar bg-white border-none fixed py-4 top-0 -mt-1 z-[100]">
       <div className="navbar-start laptop:ml-[6.5rem] mx-4">
         <a className="leading-[1.5rem] text-black font-black text-[1.5rem]">
-          {/* <img className="w-[60%]" src={BlackLogo} alt="web Logo" /> */}
+          <img className="w-[60%]" src={BlackLogo} alt="web Logo" />
           <h1 className="font-bold">
             Logo
           </h1>
