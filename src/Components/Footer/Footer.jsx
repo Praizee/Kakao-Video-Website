@@ -1,5 +1,5 @@
 import React from "react";
-import WhiteLogo from "../../assets/5ffffadf6ee51c8077d3388b_logo-white.svg"
+// import WhiteLogo from "../../assets/5ffffadf6ee51c8077d3388b_logo-white.svg"
 import { FiArrowRight } from "react-icons/fi";
 
 const Footer = () => {
@@ -24,7 +24,7 @@ const Footer = () => {
       <footer className="footer mx-2 laptop:p-10 laptop:py-16 p-6 max-w-[90%] laptop:mx-[7.1rem] border border-white/25 border-x-transparent">
 
         <div className="laptop:-mr-[9rem] laptop:-ml-10">
-          <img src={WhiteLogo} className="" alt="web-logo" />
+          {/* <img src={WhiteLogo} className="" alt="web-logo" /> */}
           <p className="mt-2 text-[1rem] font-normal leading-[1.6rem] laptop:mt-5">
             Showcase your portfolio. Perfect for
             Video Production and Creative
