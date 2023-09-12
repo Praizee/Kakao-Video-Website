@@ -1,14 +1,18 @@
 /* font import */
-@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Sora&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-    font-family: 'Golos Text', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-size: 16px;
     scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'Sora', sans-serif;
 }
 
 img {
