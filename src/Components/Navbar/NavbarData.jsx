@@ -13,6 +13,12 @@ export const NavbarData = [
   },
 
   {
+    title: 'About Us',
+    path: "/",
+    className: "",
+  },
+
+  {
     title: 'Contact',
     path: "/",
     className: "",
