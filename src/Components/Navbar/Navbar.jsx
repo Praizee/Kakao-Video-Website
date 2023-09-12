@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { NavbarData } from "./NavbarData"
-import BlackLogo from "../../assets/5ffffae014844edabd6b8c5c_logo-black.svg"
-import DribbleIcon from "../../assets/6000113b522b1655c42d9a2f_dribbble-white.svg"
-import VimeoIcon from "../../assets/6000113b0709454067001834_vimeo-white.svg"
-import BehanceIcon from "../../assets/6000113bd9f0ea6ec6a70b89_behance-white.svg"
+// import BlackLogo from "../../assets"
 
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false)
@@ -13,7 +10,7 @@ const Navbar = () => {
     <div className="navbar bg-white border-none fixed py-4 top-0 -mt-1 z-[100]">
       <div className="navbar-start laptop:ml-[6.5rem] mx-4">
         <a className="leading-[1.5rem] text-black font-black text-[1.5rem]">
-          <img className="w-[60%]" src={BlackLogo} alt="web Logo" />
+          {/* <img className="w-[60%]" src={BlackLogo} alt="web Logo" /> */}
         </a>
       </div>
 
@@ -58,7 +55,7 @@ const Navbar = () => {
                   <NavLink to={item.path} className={({ isActive }) =>
                     isActive ? 'flex min-w-max ' : 'flex rounded-none min-w-max'
                   }>
-                    <img src={item.image} className="w-[20%] bg-[#2E2E2E] p- rounded-full" />
+                    <span className="text-black"> {item.title}</span>
                   </NavLink>
                 </li>
               );
@@ -69,7 +66,7 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end laptop:mr-[7.5rem] hidden laptop:flex">
-        <span className="flex gap-2 w-1/2">
+        {/* <span className="flex gap-2 w-1/2">
           <a className=" hover:bg-black bg-black/10 rounded-full p-4 transition duration-300 ease-linear">
             <img src={DribbleIcon} className="w-full" alt="Dribble icon" />
           </a>
@@ -81,7 +78,7 @@ const Navbar = () => {
           <a className="hover:bg-black bg-black/10 rounded-full p-4 transition duration-300 ease-linear">
             <img src={BehanceIcon} className="w-full" alt="Behance icon" />
           </a>
-        </span>
+        </span> */}
       </div>
 
     </div>
