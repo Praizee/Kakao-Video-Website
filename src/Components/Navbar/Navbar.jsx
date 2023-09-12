@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { NavbarData } from "./NavbarData"
-// import BlackLogo from "../../assets"
+import { NavbarData } from "./NavbarData.jsx"
 
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false)
@@ -11,11 +10,14 @@ const Navbar = () => {
       <div className="navbar-start laptop:ml-[6.5rem] mx-4">
         <a className="leading-[1.5rem] text-black font-black text-[1.5rem]">
           {/* <img className="w-[60%]" src={BlackLogo} alt="web Logo" /> */}
+          <h1 className="font-bold">
+            Logo
+          </h1>
         </a>
       </div>
 
       {/* displays on wide screen */}
-      {/* <div className="navbar-center hidden laptop:flex laptop:mr-[20rem]">
+      <div className="navbar-center hidden laptop:flex laptop:mr-[20rem]">
         <ul className="menu-horizontal px-1">
           {NavbarData.map((item, index) => {
             return (
@@ -29,7 +31,7 @@ const Navbar = () => {
             );
           })}
         </ul>
-      </div> */}
+      </div>
 
       <div className="navbar-end">
         <div className="">
@@ -55,7 +57,9 @@ const Navbar = () => {
                   <NavLink to={item.path} className={({ isActive }) =>
                     isActive ? 'flex min-w-max ' : 'flex rounded-none min-w-max'
                   }>
-                    <span className="text-black"> {item.title}</span>
+                    <span className="p-4 text-white bg-transparent hover:bg-transparent mx-1 btn">
+                      {item.title}
+                    </span>
                   </NavLink>
                 </li>
               );
