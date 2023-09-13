@@ -1,25 +1,31 @@
 
 export const NavbarData = [
   {
-    title: 'Home',
+    title: 'Demos',
     path: "/",
     className: "",
   },
 
   {
-    title: 'About Us',
+    title: 'Company',
     path: "/",
     className: "",
   },
 
   {
-    title: 'About Us',
+    title: 'Works',
     path: "/",
     className: "",
   },
 
   {
-    title: 'Contact',
+    title: 'Blog',
+    path: "/",
+    className: "",
+  },
+
+  {
+    title: 'All Pages',
     path: "/",
     className: "",
   }
