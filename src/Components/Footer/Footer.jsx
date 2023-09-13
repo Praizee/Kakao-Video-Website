@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className="bg-[black] text-white ">
       <footer
-        className="footer laptop:p-10 p-6 max-w-[90%] laptop:mx-[7rem] mx-0">
+        className="footer laptop:p-10 p-6 max-w-[90%] laptop:mx-[5.5rem] mx-0">
         <div className="laptop:-mr-[9rem] laptop:-ml-10 w-full py-12">
           <h1 className="laptop:text-[5rem] text-[2rem] leading-[3rem] laptop:leading-[6rem] laptop:pb-6 pb-3 font-black">
             Got a project? <br />
@@ -21,7 +21,7 @@ const Footer = () => {
       </footer>
 
 
-      <footer className="footer mx-2 laptop:p-10 laptop:py-16 p-6 max-w-[90%] laptop:mx-[7.1rem] border border-white/25 border-x-transparent">
+      <footer className="footer mx-2 laptop:p-10 laptop:py-16 p-6 max-w-[90%] laptop:mx-[5.6rem] border border-white/25 border-x-transparent">
 
         <div className="laptop:-mr-[9rem] laptop:-ml-10">
           {/* <img src={WhiteLogo} className="" alt="web-logo" /> */}
@@ -52,7 +52,7 @@ const Footer = () => {
       </footer>
 
 
-      <footer className="footer laptop:p-10 p-6 max-w-[90%] laptop:mx-[7.1rem] mx-0">
+      <footer className="footer laptop:p-10 p-6 max-w-[90%] laptop:mx-[5.7rem] mx-0">
         <div className="laptop:-mr-[9rem] laptop:-ml-10">
 
           <div className="tablet:hidde laptop:min-w-[26rem] tablet:min-w-[19rem] laptop:block">
@@ -102,7 +102,7 @@ const Footer = () => {
 
       {/* <img src={FooterLine} className="w-[80%] laptop:mx-[8rem]" alt="footer-line" /> */}
 
-      <div className="laptop:flex py-10 justify-between laptop:mx-[7rem]">
+      <div className="laptop:flex py-10 justify-between laptop:mx-[5.7rem]">
         {/* copyright */}
         <p className="py-2 copyright laptop:mr-[rem] laptop:ml-0 mx-8 text-[0.85rem] laptop:block tablet:block text-[#ffffff74]">
           <span className="text-[0.85rem]">{theDate} </span>
