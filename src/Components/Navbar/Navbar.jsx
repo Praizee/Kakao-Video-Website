@@ -30,7 +30,7 @@ const Navbar = () => {
                   className={({ isActive }) =>
                     isActive
                       ? 'flex min-w-max rounded-none font-almostsemibold mx-3 py-3 px-3'
-                      : 'font- min-w-max px- mx-'
+                      : 'flex min-w-max rounded-none font-almostsemibold mx-3 py-3 px-3'
                   }
                 >
                   <div className="dropdown dropdown-hover">
