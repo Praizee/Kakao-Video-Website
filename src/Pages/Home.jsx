@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 // import Thinking from "../assets/thinking.jpg";
 import BgVideo from "../assets/Kakao-Vids/Webflow - Kakao-main.mp4";
+import BgVideo from "../assets/Kakao-Vids/Webflow - Kakao-main.mp4";
 import { PiArrowDownRightBold } from "react-icons/pi";
 
 // const imageStyles = [
