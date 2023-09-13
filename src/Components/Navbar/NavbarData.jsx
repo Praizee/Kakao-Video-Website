@@ -2,9 +2,9 @@
 export const NavbarData = [
   {
     title: 'Demos',
-    path: "/", // Set the path if needed
+    // path: "/", 
     className: "text-[0.8rem] hover:text-white/50 cursor-pointer transition duration-500 ease-linear",
-    content: ['Demo 1', 'Demo 2', 'Demo 3'], // Example content for the Demos dropdown
+    content: ['Demo 1', 'Demo 2', 'Demo 3'],
   },
   {
     title: 'Company',
