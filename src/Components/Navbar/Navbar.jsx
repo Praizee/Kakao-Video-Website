@@ -25,7 +25,27 @@ const Navbar = () => {
                 <NavLink to={item.path} className={({ isActive }) =>
                   isActive ? 'flex min-w-max rounded-none font-almostsemibold mx-3 py-3 px-3' : 'font- min-w-max px- mx-'
                 }>
-                  <span className={item.className}>{item.title}</span>
+                  <div className="dropdown dropdown-hover">
+                    <label tabIndex={0} className={item.className}>{item.title}</label>
+                    <ul tabIndex={0} className="dropdown-content grid grid-cols-2 gap-8 z-[1] menu p-2 my-8 shadow bg-black border border-white text-white/50 rounded-box w-52">
+                      <li className="text-white hover:text-white hover:translate-x-4 transition duration-300">
+                        <a>Item 1</a>
+                      </li>
+                      <li className="hover:text-white text-white/50 hover:translate-x-4 transition duration-300">
+                        <a>Item 2</a>
+                      </li>
+                      <li className="hover:text-white hover:translate-x-4 transition duration-300">
+                        <a>Item 3</a>
+                      </li>
+                      <li className="hover:text-white hover:translate-x-4 transition duration-300">
+                        <a>Item 4</a>
+                      </li>
+                      <li className="hover:text-white hover:translate-x-4 transition duration-300">
+                        <a>Item 5</a>
+                      </li>
+                    </ul>
+                  </div>
+
                 </NavLink>
               </li>
             );
