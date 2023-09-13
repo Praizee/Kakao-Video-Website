@@ -28,10 +28,10 @@ const Navbar = () => {
                   <div className="dropdown dropdown-hover">
                     <label tabIndex={0} className={item.className}>{item.title}</label>
 
-                    <ul tabIndex={0} className="dropdown-content grid grid-cols-2 gap-8 z-[1] menu p-2 my-8 shadow bg-black border border-white text-white/50 rounded-box w-52">
-                      <li className="text-white hover:text-white hover:translate-x-4 transition duration-300">
-                        <a>
-                          Item 1
+                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 my-8 shadow bg-black border border-white rounded-box w-52">
+                      <li className="">
+                        <a className="{item.dropdownclass}">
+                          {item.content}
                         </a>
                       </li>
                     </ul>
