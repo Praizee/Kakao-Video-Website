@@ -25,24 +25,3 @@ img {
 ::-webkit-scrollbar {
     display: none;
 }
-
-.group {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    /* Add other styles you may need */
-}
-
-.group:hover .text-container {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.text-container {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
