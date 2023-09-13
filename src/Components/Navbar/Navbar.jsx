@@ -16,7 +16,7 @@ const Navbar = () => {
 
       {/* displays on wide screen */}
       <div className="navbar-center hidden laptop:flex laptop:mr-[20rem]">
-        <ul className="menu-horizontal px-1 text-white font-medium text-[875rem]">
+        <ul className="menu-horizontal px-1 text-white font-medium">
           {NavbarData.map((item, index) => {
             return (
               <li key={index} className="">
