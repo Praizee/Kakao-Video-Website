@@ -22,25 +22,39 @@ const Navbar = () => {
           {NavbarData.map((item, index) => {
             return (
               <li key={index} className="">
-                <NavLink to={item.path} className={({ isActive }) =>
-                  isActive ? 'flex min-w-max rounded-none font-almostsemibold mx-3 py-3 px-3' : 'font- min-w-max px- mx-'
-                }>
+                <NavLink
+                  to={item.path}
+                  className={({ isActive }) =>
+                    isActive
+                      ? 'flex min-w-max rounded-none font-almostsemibold mx-3 py-3 px-3'
+                      : 'font- min-w-max px- mx-'
+                  }
+                >
                   <div className="dropdown dropdown-hover">
-                    <label tabIndex={0} className={item.className}>{item.title}</label>
+                    <label tabIndex={0} className={item.className}>
+                      {item.title}
+                    </label>
 
-                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 my-8 shadow bg-black border border-white rounded-box w-52">
-                      <li className="">
-                        <a className="{item.dropdownclass}">
-                          {item.content}
-                        </a>
-                      </li>
+                    <ul
+                      tabIndex={0}
+                      className="dropdown-content z-[1] menu p-2 my-8 shadow bg-black border border-white rounded-box w-52"
+                    >
+                      {item.content.map((contentItem, contentIndex) => (
+                        <li key={contentIndex}>
+                          <a className={item.dropdownclass}>
+                            <div className="block">{/* Wrap content in a block-level element */}
+                              {contentItem}
+                            </div>
+                          </a>
+                        </li>
+                      ))}
                     </ul>
-
                   </div>
                 </NavLink>
               </li>
             );
           })}
+
         </ul>
       </div>
 
