@@ -63,7 +63,7 @@ const Home = () => {
         </div>
 
         {/* our services */}
-        <div className="my-36 hidden laptop:flex bg-black py-28 laptop:mt-[11.91rem] laptop:mb-20 h-[50rem] mx-4 laptop:mx-0">
+        <div className="my-36 border hidden laptop:flex bg-black py-28 laptop:mt-[11.91rem] laptop:mb-0 h-[50rem] mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
             <div className="flex gap-[rem] justify-between">
@@ -121,11 +121,11 @@ const Home = () => {
         {/* our services */}
 
         {/* best recent work */}
-        {/* <div className="my-36 hidden laptop:flex bg-black text-white py-28 laptop:mt-[11.91rem] laptop:mb-20 h-[50rem] mx-4 laptop:mx-0">
+        <div className="borde hidden laptop:flex bg-black text-white py-28 laptop:mb-20 h-[50rem] mx-4 laptop:mx-0">
           <div className="grid grid-cols-2 gap-8">
             <span className="">
               <p className="">
-                /OUR SERVICES
+                /BEST RECENT WORK
               </p>
             </span>
 
@@ -141,7 +141,7 @@ const Home = () => {
             </span>
           </div>
 
-        </div> */}
+        </div>
         {/* end of best recent work */}
 
 
