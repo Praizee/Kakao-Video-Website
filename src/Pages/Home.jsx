@@ -63,7 +63,7 @@ const Home = () => {
         </div>
 
         {/* our services */}
-        <div className="my-36 border hidden laptop:flex bg-black py-28 laptop:mt-[11.91rem] laptop:mb-0 h-[50rem] mx-4 laptop:mx-0">
+        <div className="my-3 hidden laptop:flex bg-black pt-28 laptop:mt-[11.91rem] laptop:mb-0 mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
             <div className="flex gap-[rem] justify-between">
@@ -121,24 +121,23 @@ const Home = () => {
         {/* our services */}
 
         {/* best recent work */}
-        <div className="borde hidden laptop:flex bg-black text-white py-28 laptop:mb-20 h-[50rem] mx-4 laptop:mx-0">
-          <div className="grid grid-cols-2 gap-8">
+        <div className=" hidden laptop:flex bg-black pt-28 laptop:mb-20 mx-4 laptop:mx-0">
+          <div className="laptop:mx-[5.5rem] mb-16 w-full h-[rem] text-white grid grid-cols-2 gap-8">
+            {/* <div className="grid grid-cols-2 gap-8"> */}
             <span className="">
-              <p className="">
-                /BEST RECENT WORK
-              </p>
-            </span>
+              <span className="">
+                <p className="">
+                  /BEST RECENT WORK
+                </p>
+              </span>
 
-            <span className="flex gap-[10rem]">
-              <h1 className="text-[3.5rem] font-medium leading-[3.6rem]">
-                All Your Video Content <br />
-                Needs! Let's Create!
-              </h1>
-
-              <span className="p-4 border h-auto rounded-full ">
-                <PiArrowDownRightBold size={20} />
+              <span className="flex gap-[10rem]">
+                <h1 className="text-[3.5rem] mt-8  font-medium leading-[4rem]">
+                  Creating An Effective Video Ad Campaign
+                </h1>
               </span>
             </span>
+
           </div>
 
         </div>
