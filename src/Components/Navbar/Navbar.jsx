@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import { NavbarData } from "./NavbarData.jsx"
 import KakaoLogo from "../../assets/New Kakao Logo.svg"
@@ -6,6 +6,22 @@ import { PiArrowUpRightBold } from "react-icons/pi";
 
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div className="navbar bg- uppercase border-none fixed py-8 top-0 -mt-1 z-[100]">
