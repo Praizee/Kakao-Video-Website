@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 // import Thinking from "../assets/thinking.jpg";
 import BgVideo from "../assets/Kakao-Vids/Webflow - Kakao-main.mp4";
+import { PiArrowDownRightBold } from "react-icons/pi";
 
 // const imageStyles = [
 //   "w-full laptop:w-1/2",         // Style for the first image
@@ -61,16 +62,86 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="my-36 hidden laptop:flex bg-black laptop:my-[12rem] mx-4 laptop:mx-0">
-          <div className="laptop:mx-[5.5rem] mb-16 text-white">
-            <p className="">
-              Welcome to Kakao, the ultimate video streaming
-              platform designed to <br />
-              elevate your entertainment experience. Enjoy the show!
-            </p>
+        <div className="my-36 hidden laptop:flex bg-black py-28 laptop:mt-[11.91rem] laptop:mb-20 h-[50rem] mx-4 laptop:mx-0">
+          <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
+
+            <div className="flex gap-[rem] justify-between">
+              <span className="">
+                <p className="">
+                  /OUR SERVICES
+                </p>
+              </span>
+
+              <span className="flex gap-[10rem]">
+                <h1 className="text-[3.5rem] font-medium leading-[3.6rem]">
+                  All Your Video Content <br />
+                  Needs! Let's Create!
+                </h1>
+
+                <span className="p-4 border h-auto rounded-full ">
+                  <PiArrowDownRightBold size={20} />
+                </span>
+              </span>
+
+            </div>
+
+            <div className="grid grid-cols-3 mt-16 gap-4 ml-[20.4rem]">
+              <span className="p-4">
+                <h1 className="mb-12 text-[2rem] font-medium">
+                  Variety
+                </h1>
+                <p className="text-white/75 font-light">
+                  Watch your favourite videos in <br />
+                  one click.
+                </p>
+              </span>
+              <span className="p-4">
+                <h1 className="mb-12 text-[2rem] font-medium">
+                  Variety
+                </h1>
+                <p className="text-white/75 font-light">
+                  Watch your favourite videos in <br />
+                  one click.
+                </p>
+              </span>
+              <span className="p-4">
+                <h1 className="mb-12 text-[2rem] font-medium">
+                  Variety
+                </h1>
+                <p className="text-white/75 font-light">
+                  Watch your favourite videos in <br />
+                  one click.
+                </p>
+              </span>
+            </div>
+
           </div>
 
         </div>
+
+        <div className="my-36 hidden laptop:flex bg-black py-28 laptop:mt-[11.91rem] laptop:mb-20 h-[50rem] mx-4 laptop:mx-0">
+          <div className="grid grid-cols-2 gap-8">
+            <span className="">
+              <p className="">
+                /OUR SERVICES
+              </p>
+            </span>
+
+            <span className="flex gap-[10rem]">
+              <h1 className="text-[3.5rem] font-medium leading-[3.6rem]">
+                All Your Video Content <br />
+                Needs! Let's Create!
+              </h1>
+
+              <span className="p-4 border h-auto rounded-full ">
+                <PiArrowDownRightBold size={20} />
+              </span>
+            </span>
+          </div>
+
+        </div>
+
+
 
 
       </motion.div>
