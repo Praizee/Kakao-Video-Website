@@ -69,11 +69,13 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="navbar-end laptop:mr-[rem] text-white hidden laptop:flex">
-        <span className="">
+      <div className="navbar-end laptop:mr-[rem] text-white hidden laptop:block">
+        <span className="flex">
           <button className="bt py-2 px-4 border uppercase rounded-full transition duration-300 ease-linear hover:shadow-[0_.5px_8px_white]">
             Get In Touch
-            <PiArrowUpRightBold />
+            <span className="w-[10%]">
+              <PiArrowUpRightBold size={15} />
+            </span>
             {/* <img src={ArrowRightUp} className="" alt="Arrow-right-up" /> */}
           </button>
         </span>
