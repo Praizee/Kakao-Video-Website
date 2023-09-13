@@ -44,6 +44,7 @@ const Home = () => {
           <source src={BgVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+        <div className="backdrop-brightness-50 w-full h-screen object-cover absolute top-0 left-0"></div>
 
         <div className="laptop:mt-[25rem] text-white h-[4rem] relative z-10 p-4 laptop:p-0 mt-[10rem] mb-0 laptop:mx-[5rem] ">
 
