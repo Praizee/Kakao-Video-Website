@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { NavbarData } from "./NavbarData.jsx"
 import KakaoLogo from "../../assets/New Kakao Logo.svg"
+import ArrowRightUp from "../../assets/Right.svg"
 
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false)
@@ -15,7 +16,7 @@ const Navbar = () => {
       </div>
 
       {/* displays on wide screen */}
-      <div className="navbar-center hidden laptop:flex laptop:mr-[20rem]">
+      <div className="navbar-center hidden laptop:flex laptop:mr-[10rem]">
         <ul className="menu-horizontal mx- text-white">
           {NavbarData.map((item, index) => {
             return (
@@ -67,10 +68,11 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="navbar-end laptop:mr-[7.5rem] hidden laptop:flex">
-        <span className="w-full">
-          <button className="btn uppercase rounded-full w-full">
+      <div className="navbar-end laptop:mr-[rem] text-white hidden laptop:flex">
+        <span className="">
+          <button className="bt py-2 px-4 border uppercase rounded-full transition duration-300 ease-linear hover:shadow-[0_1px_10px_white]">
             Get In Touch
+            {/* <img src={ArrowRightUp} className="" alt="Arrow-right-up" /> */}
           </button>
         </span>
       </div>
