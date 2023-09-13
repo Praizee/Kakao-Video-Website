@@ -73,7 +73,7 @@ const Home = () => {
                 </p>
               </span>
 
-              <span className="flex gap-[10rem]">
+              <span className="flex gap-[10rem] border border-b-white/25 border-x-transparent border-t-transparent pb-10">
                 <h1 className="text-[3.5rem] font-medium leading-[3.6rem]">
                   All Your Video Content <br />
                   Needs! Let's Create!
@@ -86,7 +86,7 @@ const Home = () => {
 
             </div>
 
-            <div className="grid grid-cols-3 mt-16 gap-4 ml-[20.4rem]">
+            <div className="grid grid-cols-3 mt-2 gap-4 ml-[20.4rem]">
               <span className="p-4">
                 <h1 className="mb-12 text-[2rem] font-medium">
                   Variety
@@ -121,7 +121,7 @@ const Home = () => {
         {/* our services */}
 
         {/* best recent work */}
-        <div className="my-36 hidden laptop:flex bg-black py-28 laptop:mt-[11.91rem] laptop:mb-20 h-[50rem] mx-4 laptop:mx-0">
+        {/* <div className="my-36 hidden laptop:flex bg-black text-white py-28 laptop:mt-[11.91rem] laptop:mb-20 h-[50rem] mx-4 laptop:mx-0">
           <div className="grid grid-cols-2 gap-8">
             <span className="">
               <p className="">
@@ -141,7 +141,7 @@ const Home = () => {
             </span>
           </div>
 
-        </div>
+        </div> */}
         {/* end of best recent work */}
 
 
