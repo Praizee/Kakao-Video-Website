@@ -32,7 +32,7 @@ export const NavbarData = [
     title: 'All Pages',
     path: "/",
     className: "text-[0.8rem] hover:text-white/50 cursor-pointer transition duration-500 ease-linear",
-    content: [],
+    content: ['Home 1', 'Home 2', 'Home 3', 'About Us 1', 'About Us 2', 'About Us 3', 'Our Team', 'Testimonials', 'FAQ', 'Pricing', 'How We Work', 'Contact Us', 'Works 1', 'Works 2', 'Works 3', 'Works Details', 'Works Category', 'Blog', 'Blog Details', 'Blog Category', '404', 'Style Guide', 'Coming Soon', 'Licensing'],
     dropdownclass: 'block text-white/50 hover:text-white hover:translate-x-4 transition duration-300',
   },
 ];
