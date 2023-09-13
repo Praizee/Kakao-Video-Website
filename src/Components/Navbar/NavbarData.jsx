@@ -3,31 +3,31 @@ export const NavbarData = [
   {
     title: 'Demos',
     path: "/",
-    className: "",
+    className: "text-[0.8rem]",
   },
 
   {
     title: 'Company',
     path: "/",
-    className: "",
+    className: "text-[0.8rem]",
   },
 
   {
     title: 'Works',
     path: "/",
-    className: "",
+    className: "text-[0.8rem]",
   },
 
   {
     title: 'Blog',
     path: "/",
-    className: "",
+    className: "text-[0.8rem]",
   },
 
   {
     title: 'All Pages',
     path: "/",
-    className: "",
+    className: "text-[0.8rem]",
   }
 
 ];
