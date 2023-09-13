@@ -3,7 +3,7 @@ export const NavbarData = [
   {
     title: 'Demos',
     path: "/",
-    className: "text-[0.8rem]",
+    className: "text-[0.8rem] hover:text-white/50 transition duration-500 ease-linear",
   },
 
   {
