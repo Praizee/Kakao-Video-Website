@@ -18,7 +18,7 @@ export const NavbarData = [
     title: 'Works',
     path: "/",
     className: "text-[0.8rem] hover:text-white/50 cursor-pointer transition duration-500 ease-linear",
-    content: ['Work 1', 'Work 2', 'Work 3'],
+    content: ['Works 1', 'Works 2', 'Works 3', 'Works Details', 'Works Category'],
     dropdownclass: 'block text-white/50 hover:text-white hover:translate-x-4 transition duration-300',
   },
   {
