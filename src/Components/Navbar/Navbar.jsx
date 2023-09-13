@@ -68,19 +68,11 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end laptop:mr-[7.5rem] hidden laptop:flex">
-        {/* <span className="flex gap-2 w-1/2">
-          <a className=" hover:bg-black bg-black/10 rounded-full p-4 transition duration-300 ease-linear">
-            <img src={DribbleIcon} className="w-full" alt="Dribble icon" />
-          </a>
-
-          <a className="hover:bg-black bg-black/10 rounded-full p-4 transition duration-300 ease-linear">
-            <img src={VimeoIcon} className="w-full" alt="Vimeo icon" />
-          </a>
-
-          <a className="hover:bg-black bg-black/10 rounded-full p-4 transition duration-300 ease-linear">
-            <img src={BehanceIcon} className="w-full" alt="Behance icon" />
-          </a>
-        </span> */}
+        <span className="w-full">
+          <button className="btn uppercase rounded-full w-full">
+            Get In Touch
+          </button>
+        </span>
       </div>
 
     </div>
