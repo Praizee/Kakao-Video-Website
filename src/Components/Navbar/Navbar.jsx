@@ -9,19 +9,19 @@ const Navbar = () => {
   return (
     <div className="navbar bg- uppercase border-none fixed py-8 top-0 -mt-1 z-[100]">
       <div className="navbar-start laptop:ml-[5rem] mx-4">
-        <a className="leading-[1.5rem] text-black font-black text-[1.5rem]">
-          <img className="w-[60%] laptop:w-[90%]" src={KakaoLogo} alt="web Logo" />
+        <a className="leading-[1.5rem] text-black py-3 font-black text-[1.5rem]">
+          <img className="w-[60%] laptop:w-full" src={KakaoLogo} alt="web Logo" />
         </a>
       </div>
 
       {/* displays on wide screen */}
       <div className="navbar-center hidden laptop:flex laptop:mr-[20rem]">
-        <ul className="menu-horizontal px-1 text-white font-medium">
+        <ul className="menu-horizontal mx- text-white">
           {NavbarData.map((item, index) => {
             return (
               <li key={index} className="">
                 <NavLink to={item.path} className={({ isActive }) =>
-                  isActive ? 'flex min-w-max rounded-none mx-2 pb-[0.3rem] border-b-[3px] px-1 border-[black]' : 'font-medium min-w-max px-1 mx-2'
+                  isActive ? 'flex min-w-max rounded-none mx-3 font-medium py-3 px-3' : 'font-medium min-w-max px- mx-'
                 }>
                   <span className={item.className}>{item.title}</span>
                 </NavLink>
