@@ -104,16 +104,28 @@ const Footer = () => {
 
       <div className="laptop:flex py-10 justify-between laptop:mx-[5.7rem]">
         {/* copyright */}
-        <p className="py-2 copyright laptop:mr-[rem] laptop:ml-0 mx-8 text-[0.85rem] laptop:block tablet:block text-[#ffffff74]">
-          <span className="text-[0.85rem]">{theDate} </span>
+        <p className="py-2 copyright laptop:mr-[rem] laptop:ml-0 mx-8 text-[1rem] laptop:block tablet:block text-[#ffffff74]">
           @
-          Filmos.
-          All rights reserved.
+          Kakao.
+          All rights reserved
+          <span className="text-[0.85rem]"> {theDate}</span>.
+          Licensing
         </p>
 
-        <a className="py-2 link link-hover copyright laptop:mr-8 mx-7 text-[0.85rem] laptop:block tablet:block text-white/50">
-          Powered By Webflow
-        </a>
+        <span className="py-2 copyright laptop:mr-8 mx-7 text-[1rem] laptop:block tablet:block text-white/50">
+          <a className="link link-hover text-white hover:text-white/50">
+            Template
+          </a>
+          &nbsp;
+          by
+          &nbsp;
+          <a className="link link-hover text-white hover:text-white/50">
+            wCopilot
+          </a>
+          &nbsp;
+          Powered by
+          Webflow
+        </span>
         {/* end of copyright */}
       </div>
 
