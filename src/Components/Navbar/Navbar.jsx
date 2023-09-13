@@ -74,9 +74,9 @@ const Navbar = () => {
           <button className="btn bg-transparent text-white hover:bg-transparent font-almostsemibold border uppercase rounded-full transition duration-300 ease-linear hover:shadow-[0_.5px_8px_white]">
             Get In Touch
             <span className="">
+              {/* hover:-translate-y-2 */}
               <PiArrowUpRightBold size={15} />
             </span>
-            {/* <img src={ArrowRightUp} className="" alt="Arrow-right-up" /> */}
           </button>
         </span>
       </div>
