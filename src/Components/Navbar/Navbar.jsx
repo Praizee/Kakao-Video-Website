@@ -20,6 +20,9 @@ const Navbar = () => {
       <div className="navbar-center hidden laptop:flex laptop:mr-[10rem]">
         <ul className="menu-horizontal tracking-widest text-white">
           {NavbarData.map((item, index) => {
+            // Check if there is content in the dropdown
+            const hasContent = item.content.length > 0;
+
             return (
               <li key={index} className="">
                 <NavLink
@@ -35,20 +38,22 @@ const Navbar = () => {
                       {item.title}
                     </label>
 
-                    <ul
-                      tabIndex={0}
-                      className="dropdown-content z-[1] menu p-2 my-8 shadow bg-black border border-white rounded-box w-52"
-                    >
-                      {item.content.map((contentItem, contentIndex) => (
-                        <li key={contentIndex}>
-                          <a className={item.dropdownclass}>
-                            <div className="block">{/* Wrap content in a block-level element */}
-                              {contentItem}
-                            </div>
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
+                    {hasContent && (
+                      <ul
+                        tabIndex={0}
+                        className="dropdown-content z-[1] menu p-2 my-8 shadow bg-black border border-white rounded-box w-[15rem]"
+                      >
+                        {item.content.map((contentItem, contentIndex) => (
+                          <li key={contentIndex}>
+                            <a className={item.dropdownclass}>
+                              <div className="block">{/* Wrap content in a block-level element */}
+                                {contentItem}
+                              </div>
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
                 </NavLink>
               </li>
