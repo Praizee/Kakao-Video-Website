@@ -12,7 +12,7 @@ const Navbar = () => {
     <div className="navbar bg- uppercase border-none fixed py-8 top-0 -mt-1 z-[100]">
       <div className="navbar-start laptop:ml-[5rem] mx-4">
         <a className="leading-[1.5rem] text-black py-3 font-black text-[1.5rem]">
-          <img className="w-[60%] laptop:w-full" src={KakaoLogo} alt="web Logo" />
+          <img className="w-[60%] laptop:w-[75%]" src={KakaoLogo} alt="web Logo" />
         </a>
       </div>
 
