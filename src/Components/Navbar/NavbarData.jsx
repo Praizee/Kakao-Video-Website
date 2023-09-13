@@ -23,7 +23,7 @@ export const NavbarData = [
   },
   {
     title: 'Blog',
-    // path: "/",
+    path: "/blog",
     className: "text-[0.8rem] hover:text-white/50 cursor-pointer transition duration-500 ease-linear",
     content: [], // No content for this one
     dropdownclass: 'block text-white/50 hover:text-white hover:translate-x-4 transition duration-300',
