@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { NavbarData } from "./NavbarData.jsx"
 import KakaoLogo from "../../assets/New Kakao Logo.svg"
-import ArrowRightUp from "../../assets/Right.svg"
 import { PiArrowUpRightBold } from "react-icons/pi";
 
 const Navbar = () => {
@@ -41,14 +40,14 @@ const Navbar = () => {
                     {hasContent && (
                       <ul
                         tabIndex={0}
-                        className="dropdown-content z-[1] menu p-2 my-8 shadow bg-black border border-white rounded-box w-[15rem]"
+                        className="dropdown-content z-[1] text-[0.75] menu p-2 my-8 shadow bg-black border border-white rounded-box w-[15rem]"
                       >
                         {item.content.map((contentItem, contentIndex) => (
                           <li key={contentIndex}>
                             <a className={item.dropdownclass}>
-                              <div className="block">{/* Wrap content in a block-level element */}
+                              <span className="block">{/* Wrap content in a block-level element */}
                                 {contentItem}
-                              </div>
+                              </span>
                             </a>
                           </li>
                         ))}
