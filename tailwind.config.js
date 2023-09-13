@@ -31,7 +31,7 @@ export default {
       light: '300',
       normal: '400',
       medium: '500',
-      almostsemibold: '580',
+      almostsemibold: '590',
       semibold: '600',
       notbold: '620',
       bold: '700',
