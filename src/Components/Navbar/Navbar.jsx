@@ -40,12 +40,12 @@ const Navbar = () => {
                     {hasContent && (
                       <ul
                         tabIndex={0}
-                        className="dropdown-content z-[1] text-[0.75] menu p-2 my-8 shadow bg-black border border-white rounded-box w-[15rem]"
+                        className="dropdown-content z-[1] menu p-2 my-8 shadow bg-black border border-white rounded-box w-[15rem]"
                       >
                         {item.content.map((contentItem, contentIndex) => (
                           <li key={contentIndex}>
                             <a className={item.dropdownclass}>
-                              <span className="block">{/* Wrap content in a block-level element */}
+                              <span className="block text-[0.75rem]">{/* Wrap content in a block-level element */}
                                 {contentItem}
                               </span>
                             </a>
