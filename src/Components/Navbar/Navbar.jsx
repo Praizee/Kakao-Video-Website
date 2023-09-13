@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { NavbarData } from "./NavbarData.jsx"
 import KakaoLogo from "../../assets/New Kakao Logo.svg"
 import ArrowRightUp from "../../assets/Right.svg"
+import { PiArrowUpRightBold } from "react-icons/pi";
 
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false)
@@ -70,8 +71,9 @@ const Navbar = () => {
 
       <div className="navbar-end laptop:mr-[rem] text-white hidden laptop:flex">
         <span className="">
-          <button className="bt py-2 px-4 border uppercase rounded-full transition duration-300 ease-linear hover:shadow-[0_1px_10px_white]">
+          <button className="bt py-2 px-4 border uppercase rounded-full transition duration-300 ease-linear hover:shadow-[0_.5px_8px_white]">
             Get In Touch
+            <PiArrowUpRightBold />
             {/* <img src={ArrowRightUp} className="" alt="Arrow-right-up" /> */}
           </button>
         </span>
