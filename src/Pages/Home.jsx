@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 // import Thinking from "../assets/thinking.jpg";
-// import Video1 from "../assets/agency-video.mp4";
+import BgVideo from "../assets/Kakao-Vids/Webflow - Kakao-main.mp4";
 
 // const imageStyles = [
 //   "w-full laptop:w-1/2",         // Style for the first image
@@ -34,17 +34,39 @@ const Home = () => {
         exit="exit"
         transition={{ duration: 3 }}
       >
-        <div className="laptop:mt-[20rem] h-[4rem] p-4 laptop:p-0 mt-[10rem] laptop:min-h-screen mb-0 laptop:mx-[7rem] ">
+
+        <video
+          autoPlay
+          loop
+          muted
+          className="w-full h-screen object-cover absolute top-0 left-0"
+        >
+          <source src={BgVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <div className="laptop:mt-[25rem] text-white h-[4rem] relative z-10 p-4 laptop:p-0 mt-[10rem] mb-0 laptop:mx-[5rem] ">
+
           <div>
-            <h1 className="laptop:text-[9rem] text-[3rem] mx-2 laptop:mx-0 laptop:leading-[8rem] font-black">
-              Video <br /> production.
+            <h1 className="laptop:text-[5rem] text-[3rem] mx-2 laptop:mx- laptop:leading-[8rem] font-black">
+              YOUR VIDEO WORLD
             </h1>
+
+            <p className="mx-2">
+              Welcome to Kakao, the ultimate video streaming
+              platform designed to <br />
+              elevate your entertainment experience. Enjoy the show!
+            </p>
           </div>
         </div>
 
-        <div className="my-36 hidden laptop:block laptop:my-0 mx-4 laptop:mx-0">
-          <div className="laptop:mx-[7rem] mb-16">
-
+        <div className="my-36 hidden laptop:flex bg-black laptop:my-[12rem] mx-4 laptop:mx-0">
+          <div className="laptop:mx-[5.5rem] mb-16 text-white">
+            <p className="">
+              Welcome to Kakao, the ultimate video streaming
+              platform designed to <br />
+              elevate your entertainment experience. Enjoy the show!
+            </p>
           </div>
 
         </div>
