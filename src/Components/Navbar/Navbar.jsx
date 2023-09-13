@@ -30,7 +30,7 @@ const Navbar = () => {
         ? 'bg-opacity-90 backdrop-blur-lg'
         : 'bg-transparent'
         } 
-        navbar uppercase border-none fixed py-6 top-4 rounded-full -mt-1 transition-all duration-300 left-0 right-0 z-[100]`}>
+        navbar uppercase border-none fixed py-4 top-4 rounded-full -mt-1 transition-all duration-300 left-0 right-0 z-[100]`}>
 
       <div className="navbar-start laptop:ml-[5rem] mx-4">
         <a className="leading-[1.5rem] text-black py-3 font-black text-[1.5rem]">
