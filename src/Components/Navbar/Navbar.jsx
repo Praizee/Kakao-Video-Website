@@ -24,7 +24,14 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="navbar bg- uppercase border-none fixed py-8 top-0 -mt-1 z-[100]">
+    <div
+      //  className="bg-  "
+      className={`${isScrolled
+        ? 'bg-opacity-90 backdrop-blur-lg'
+        : 'bg-transparent'
+        } 
+        navbar uppercase border-none fixed py-6 top-4 rounded-full -mt-1 transition-all duration-300 left-0 right-0 z-[100]`}>
+
       <div className="navbar-start laptop:ml-[5rem] mx-4">
         <a className="leading-[1.5rem] text-black py-3 font-black text-[1.5rem]">
           <img className="w-[60%] laptop:w-[75%]" src={KakaoLogo} alt="web Logo" />
@@ -126,7 +133,7 @@ const Navbar = () => {
         </span>
       </div>
 
-    </div>
+    </div >
 
   );
 };
