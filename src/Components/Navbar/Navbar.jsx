@@ -63,7 +63,11 @@ const Navbar = () => {
                     {hasContent && (
                       <ul
                         tabIndex={0}
-                        className="dropdown-content z-[1] menu p-2 my-8 shadow bg-black border border-white rounded-box w-[15rem]"
+                        className={`dropdown-content z-[1] menu 
+                        p-2 my-8 shadow bg-black border border-white rounded-box w-52 
+                        ${item.content.length === 24
+                            ? 'grid grid-cols-3 gap-2 w-[32rem]' : ''
+                          }`}
                       >
                         {item.content.map((contentItem, contentIndex) => (
                           <li key={contentIndex}>
