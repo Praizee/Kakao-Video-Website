@@ -1,25 +1,22 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { NavbarData } from "./NavbarData.jsx"
-import BlackLogo from "../../assets"
+import KakaoLogo from "../../assets/New Kakao Logo.svg"
 
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false)
 
   return (
-    <div className="navbar bg-white border-none fixed py-4 top-0 -mt-1 z-[100]">
-      <div className="navbar-start laptop:ml-[6.5rem] mx-4">
+    <div className="navbar bg- uppercase border-none fixed py-8 top-0 -mt-1 z-[100]">
+      <div className="navbar-start laptop:ml-[5rem] mx-4">
         <a className="leading-[1.5rem] text-black font-black text-[1.5rem]">
-          <img className="w-[60%]" src={BlackLogo} alt="web Logo" />
-          <h1 className="font-bold">
-            Logo
-          </h1>
+          <img className="w-[60%] laptop:w-[90%]" src={KakaoLogo} alt="web Logo" />
         </a>
       </div>
 
       {/* displays on wide screen */}
       <div className="navbar-center hidden laptop:flex laptop:mr-[20rem]">
-        <ul className="menu-horizontal px-1">
+        <ul className="menu-horizontal px-1 text-white font-medium text-[875rem]">
           {NavbarData.map((item, index) => {
             return (
               <li key={index} className="">
