@@ -62,6 +62,7 @@ const Home = () => {
           </div>
         </div>
 
+        {/* our services */}
         <div className="my-36 hidden laptop:flex bg-black py-28 laptop:mt-[11.91rem] laptop:mb-20 h-[50rem] mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
@@ -97,7 +98,7 @@ const Home = () => {
               </span>
               <span className="p-4">
                 <h1 className="mb-12 text-[2rem] font-medium">
-                  Variety
+                  Quality
                 </h1>
                 <p className="text-white/75 font-light">
                   Watch your favourite videos in <br />
@@ -106,7 +107,7 @@ const Home = () => {
               </span>
               <span className="p-4">
                 <h1 className="mb-12 text-[2rem] font-medium">
-                  Variety
+                  Innovation
                 </h1>
                 <p className="text-white/75 font-light">
                   Watch your favourite videos in <br />
@@ -116,9 +117,10 @@ const Home = () => {
             </div>
 
           </div>
-
         </div>
+        {/* our services */}
 
+        {/* best recent work */}
         <div className="my-36 hidden laptop:flex bg-black py-28 laptop:mt-[11.91rem] laptop:mb-20 h-[50rem] mx-4 laptop:mx-0">
           <div className="grid grid-cols-2 gap-8">
             <span className="">
@@ -140,6 +142,7 @@ const Home = () => {
           </div>
 
         </div>
+        {/* end of best recent work */}
 
 
 
