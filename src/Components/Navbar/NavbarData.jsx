@@ -2,31 +2,31 @@
 export const NavbarData = [
   {
     title: 'Demos',
-    path: "/",
+    // path: "/",
     className: "text-[0.8rem] hover:text-white/50 transition duration-500 ease-linear",
   },
 
   {
     title: 'Company',
-    path: "/",
+    // path: "/",
     className: "text-[0.8rem] hover:text-white/50 transition duration-500 ease-linear",
   },
 
   {
     title: 'Works',
-    path: "/",
+    // path: "/",
     className: "text-[0.8rem] hover:text-white/50 transition duration-500 ease-linear",
   },
 
   {
     title: 'Blog',
-    path: "/",
+    // path: "/",
     className: "text-[0.8rem] hover:text-white/50 transition duration-500 ease-linear",
   },
 
   {
     title: 'All Pages',
-    path: "/",
+    // path: "/",
     className: "text-[0.8rem] hover:text-white/50 transition duration-500 ease-linear",
   }
 
