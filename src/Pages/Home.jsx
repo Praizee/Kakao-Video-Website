@@ -181,12 +181,6 @@ const Home = () => {
 
         <div className="text-white bg-black py-8 my-8">
 
-          {/* <section>
-            <ParallaxText baseVelocity={-5}>Framer Motion</ParallaxText>
-            <ParallaxText baseVelocity={5}>Scroll velocity</ParallaxText>
-          </section> */}
-
-
           <Marquee loop={1} pauseOnHover>
             <ul className="flex gap-4 text-[4rem]">
               <li className="text-[8rem]">
