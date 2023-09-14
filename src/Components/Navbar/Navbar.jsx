@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { NavbarData } from "./NavbarData.jsx"
 import KakaoLogo from "../../assets/New Kakao Logo.svg"
 import { PiArrowUpRightBold } from "react-icons/pi";
@@ -33,9 +33,10 @@ const Navbar = () => {
         navbar uppercase border-none fixed py-4 top-4 rounded-full -mt-1 transition-all duration-300 left-0 right-0 z-[100]`}>
 
       <div className="navbar-start laptop:ml-[5rem] mx-4">
-        <a className="leading-[1.5rem] text-black py-3 font-black text-[1.5rem]">
+        <Link to="/"
+          className="leading-[1.5rem] text-black py-3 font-black text-[1.5rem]">
           <img className="w-[60%] laptop:w-[75%]" src={KakaoLogo} alt="web Logo" />
-        </a>
+        </Link>
       </div>
 
       {/* displays on wide screen */}
