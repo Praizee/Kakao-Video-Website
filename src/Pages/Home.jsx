@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 // import Thinking from "../assets/thinking.jpg";
 import BgVideo from "../assets/Kakao-Vids/Webflow - Kakao-main.mp4";
-import BgVideo from "../assets/Kakao-Vids/Webflow - Kakao-main.mp4";
+import BestRecentWorkVideo from "../assets/Kakao-Vids/Kakao - Webflow HTML website 07.mp4";
+import VRGamer from "../assets/Kakao-Vids/VRgamer.mp4";
 import { PiArrowDownRightBold } from "react-icons/pi";
 
 // const imageStyles = [
@@ -126,19 +127,43 @@ const Home = () => {
           <div className="laptop:mx-[5.5rem] mb-16 w-full h-[rem] text-white grid grid-cols-2 gap-8">
             {/* <div className="grid grid-cols-2 gap-8"> */}
             <span className="">
+              <video
+                autoPlay
+                loop
+                muted
+                width="3000"
+                height="5000"
+                className="w-screen h-screen"
+              >
+                <source src={BestRecentWorkVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              {/* <span className="backdrop-brightness-50 w-full h-screen object-cover absolute top-0 left-0"></span> */}
+            </span>
+
+            <span className="">
               <span className="">
                 <p className="">
                   /BEST RECENT WORK
                 </p>
               </span>
 
-              <span className="flex gap-[10rem]">
+              <span className="flex gap-[10rem] mb-8">
                 <h1 className="text-[3.5rem] mt-8  font-medium leading-[4rem]">
                   Creating An Effective Video Ad Campaign
                 </h1>
               </span>
-            </span>
 
+              <video
+                autoPlay
+                loop
+                muted
+                className="w-full"
+              >
+                <source src={VRGamer} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </span>
           </div>
 
         </div>
