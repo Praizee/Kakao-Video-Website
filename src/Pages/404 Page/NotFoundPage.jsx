@@ -11,8 +11,8 @@ const NotFoundPage = () => {
             <p>
                 Sorry, the page you are looking for does not exist.
             </p> */}
-
-            <section className="page_404 min-h-screen bg-[#f8f8fd] ">
+            {/* bg-[#f8f8fd] */}
+            <section className="page_404 min-h-screen bg-black ">
                 <div className="container laptop:mx-[6rem] tablet:mx-[3rem]">
                     <div className="row">
                         <div className="col-sm-12 ">
