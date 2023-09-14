@@ -298,7 +298,7 @@ const Home = () => {
                     </h1>
                   </Marquee>
                 </a>
-                {/* <a className="flex text-[2rem] gap-[6rem] border uppercase border-y-white/25 border-x-transparent py-12">
+                <a className="flex text-[2rem] gap-[6rem] border uppercase border-y-white/25 border-x-transparent py-12">
                   <h1 className="font-medium leading-[3.6rem]">
                     6.12.23
                   </h1>
@@ -327,7 +327,7 @@ const Home = () => {
                       Exploring Color Grading&nbsp;•&nbsp;Exploring Color Grading&nbsp;•&nbsp;
                     </h1>
                   </Marquee>
-                </a> */}
+                </a>
 
               </div>
 
