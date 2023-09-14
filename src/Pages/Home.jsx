@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import BgVideo from "../assets/Kakao-Vids/Webflow - Kakao-main.mp4";
 import BestRecentWorkVideo from "../assets/Kakao-Vids/pexels shvets production 7547019 3840x2160 25fps.mp4";
 import VRGamer from "../assets/Kakao-Vids/VRgamer.mp4";
-import SunsetBeach from "../assets/Kakao-Vids/Sunset-beach-lady.mp4";
+import SunsetBeach from "../assets/Kakao-Vids/Sunset-beach.mp4";
 import BalletDancer from "../assets/Kakao-Vids/Ballet-dancer.mp4";
 import { PiArrowDownRightBold } from "react-icons/pi";
 
@@ -18,13 +18,16 @@ const Home = () => {
   const contentData = [
     {
       title: "Creating An Effective Video Ad Campaign",
-      videoSource: VRGamer, // Example video source
+      videoSource: VRGamer, // video source
     },
     {
       title: "Best Technologies In Video Production",
-      videoSource: VRGamer, // Example video source
+      videoSource: VRGamer, // video source
     },
-    // Add more sections as needed
+    {
+      title: "Creation Of Dynamic Visual Transitions",
+      videoSource: SunsetBeach, // video source
+    },
   ];
 
   return (
@@ -142,29 +145,31 @@ const Home = () => {
             {/* end of video on the left */}
 
             {/* content (including text and video) on the right to be mapped */}
-            <span className="">
-              <span className="">
-                <p className="">
-                  /BEST RECENT WORK
-                </p>
-              </span>
+            {contentData.map((item, index) => (
+              <span className="" key={index}>
+                <span className="">
+                  <p className="">
+                    /BEST RECENT WORK
+                  </p>
+                </span>
 
-              <span className="flex gap-[10rem] mb-8">
-                <h1 className="text-[3.5rem] mt-8  font-medium leading-[4rem]">
-                  Creating An Effective Video Ad Campaign
-                </h1>
-              </span>
+                <span className="flex gap-[10rem] mb-8">
+                  <h1 className="text-[3.5rem] mt-8  font-medium leading-[4rem]">
+                    {item.title}
+                  </h1>
+                </span>
 
-              <video
-                autoPlay
-                loop
-                muted
-                className="w-full"
-              >
-                <source src={VRGamer} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </span>
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  className="w-full"
+                >
+                  <source src={item.videoSource} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </span>
+            ))}
             {/* end of content (including text and video) on the right to be mapped */}
           </div>
 
