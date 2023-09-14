@@ -1,23 +1,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-// import Thinking from "../assets/thinking.jpg";
 import BgVideo from "../assets/Kakao-Vids/Webflow - Kakao-main.mp4";
-import BestRecentWorkVideo from "../assets/Kakao-Vids/Kakao - Webflow HTML website 07.mp4";
+import BestRecentWorkVideo from "../assets/Kakao-Vids/pexels shvets production 7547019 3840x2160 25fps.mp4";
 import VRGamer from "../assets/Kakao-Vids/VRgamer.mp4";
+import SunsetBeach from "../assets/Kakao-Vids/Sunset-beach-lady.mp4";
+import BalletDancer from "../assets/Kakao-Vids/Ballet-dancer.mp4";
 import { PiArrowDownRightBold } from "react-icons/pi";
-
-// const imageStyles = [
-//   "w-full laptop:w-1/2",         // Style for the first image
-//   "w-full laptop:w-1/2",         // Style for the second image
-//   "w-full laptop:w-1/2",         // Style for the third image
-//   "w-full laptop:w-1/2",         // Style for the fourth image
-//   "w-full laptop:w-1/2",         // Style for the fifth image
-//   "w-full laptop:w-1/2",         // Style for the sixth image
-//   "w-full laptop:w-1/2",         // Style for the seventh image
-//   "w-full laptop:w-1/2",         // Style for the eighth image
-//   "w-full laptop:w-1/2",         // Style for the ninth image
-//   "w-full laptop:w-1/2",         // Style for the tenth image
-// ];
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -26,7 +14,18 @@ const animationConfiguration = {
 };
 
 const Home = () => {
-  const [hoveredVideo, setHoveredVideo] = useState(null);
+
+  const contentData = [
+    {
+      title: "Creating An Effective Video Ad Campaign",
+      videoSource: VRGamer, // Example video source
+    },
+    {
+      title: "Best Technologies In Video Production",
+      videoSource: VRGamer, // Example video source
+    },
+    // Add more sections as needed
+  ];
 
   return (
     <section className="text-black bg-white">
@@ -125,7 +124,7 @@ const Home = () => {
         {/* best recent work */}
         <div className=" hidden laptop:flex bg-black pt-28 laptop:mb-20 mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-16 w-full h-[rem] text-white grid grid-cols-2 gap-8">
-            {/* <div className="grid grid-cols-2 gap-8"> */}
+            {/* video on the left */}
             <span className="">
               <video
                 autoPlay
@@ -140,7 +139,9 @@ const Home = () => {
               </video>
               {/* <span className="backdrop-brightness-50 w-full h-screen object-cover absolute top-0 left-0"></span> */}
             </span>
+            {/* end of video on the left */}
 
+            {/* content (including text and video) on the right to be mapped */}
             <span className="">
               <span className="">
                 <p className="">
@@ -164,6 +165,7 @@ const Home = () => {
                 Your browser does not support the video tag.
               </video>
             </span>
+            {/* end of content (including text and video) on the right to be mapped */}
           </div>
 
         </div>
