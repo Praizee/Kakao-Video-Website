@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Marquee from "react-fast-marquee";
 import BgVideo from "../assets/Kakao-Vids/Webflow - Kakao-main.mp4";
 import BestRecentWorkVideo from "../assets/Kakao-Vids/pexels shvets production 7547019 3840x2160 25fps.mp4";
 import VRGamer from "../assets/Kakao-Vids/VRgamer.mp4";
@@ -144,7 +145,7 @@ const Home = () => {
             </span>
             {/* end of video on the left */}
 
-            {/* content (including text and video) on the right to be mapped */}
+            {/* content and video on the right */}
             {contentData.map((item, index) => (
               <span className="" key={index}>
                 <span className="">
@@ -170,12 +171,46 @@ const Home = () => {
                 </video>
               </span>
             ))}
-            {/* end of content (including text and video) on the right to be mapped */}
+            {/* end of content and video on the right */}
           </div>
 
         </div>
         {/* end of best recent work */}
 
+
+        <div className="text-white bg-black py-8 my-8">
+          <Marquee>
+            <ul className="flex gap-4">
+              <li className="">
+                Video
+              </li>
+              •
+              <li>
+                Imagination
+              </li>
+              •
+              <li className="">
+                Video
+              </li>
+            </ul>
+          </Marquee>
+
+          <Marquee>
+            <ul className="flex gap-4">
+              <li className="">
+                Imagination
+              </li>
+              •
+              <li>
+                Video
+              </li>
+              •
+              <li className="">
+                Imagination
+              </li>
+            </ul>
+          </Marquee>
+        </div>
 
 
 
