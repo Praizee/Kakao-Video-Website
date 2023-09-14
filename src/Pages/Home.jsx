@@ -6,6 +6,7 @@ import BestRecentWorkVideo from "../assets/Kakao-Vids/pexels shvets production 7
 import VRGamer from "../assets/Kakao-Vids/VRgamer.mp4";
 import SunsetBeach from "../assets/Kakao-Vids/Sunset-beach.mp4";
 import BalletDancer from "../assets/Kakao-Vids/Ballet-dancer.mp4";
+import SunsetWithMountains from "../assets/Kakao-Vids/sunset-with-mountain.webm"
 import { PiArrowDownRightBold } from "react-icons/pi";
 
 const animationConfiguration = {
@@ -179,6 +180,13 @@ const Home = () => {
 
 
         <div className="text-white bg-black py-8 my-8">
+
+          {/* <section>
+            <ParallaxText baseVelocity={-5}>Framer Motion</ParallaxText>
+            <ParallaxText baseVelocity={5}>Scroll velocity</ParallaxText>
+          </section> */}
+
+
           <Marquee loop={1} pauseOnHover>
             <ul className="flex gap-4 text-[4rem]">
               <li className="text-[8rem]">
@@ -196,7 +204,7 @@ const Home = () => {
             </ul>
           </Marquee>
 
-          <Marquee loop={3} delay={20}>
+          <Marquee loop={1} delay={30}>
             <ul className="flex gap-4 text-[4rem]">
               <li className="text-outline text-[8rem]">
                 Imagination
@@ -214,7 +222,35 @@ const Home = () => {
           </Marquee>
         </div>
 
+        <div className="bg-black text-white my-8 py-8">
+          <div className="">
+            <div className="laptop:mx-[5rem] z-50 absolute">
+              <h1 className="text-[3rem] mb-10 leading-[3.2rem]">
+                Let's Create Smile-Worthy <br />
+                Digital Content Together.
+              </h1>
+              <p className="">
+                Get ready to unlock the power of visual storytelling and take your video <br />
+                journey to new heights. Join us today and let your videos shine on Kakao!
+              </p>
+            </div>
 
+            <video
+              autoPlay
+              loop
+              muted
+              className="w-full h-screen object-cover relative"
+            >
+              {/* max-h-[40rem] */}
+              <source src={SunsetWithMountains} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            {/* <div className="backdrop-brightness-50 w-full h-screen object-cover absolute border"></div> */}
+          </div>
+
+
+        </div>
 
       </motion.div>
     </section>
