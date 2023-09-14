@@ -130,7 +130,7 @@ const Home = () => {
         <div className=" hidden laptop:flex bg-black pt-28 laptop:mb-20 mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-16 w-full h-[rem] text-white grid grid-cols-2 gap-24">
             {/* video on the left */}
-            <span className="">
+            <div className="">
               <video
                 autoPlay
                 loop
@@ -143,12 +143,12 @@ const Home = () => {
                 Your browser does not support the video tag.
               </video>
               {/* <span className="backdrop-brightness-50 w-full h-screen object-cover absolute top-0 left-0"></span> */}
-            </span>
+            </div>
             {/* end of video on the left */}
 
             {/* content and video on the right */}
             {contentData.map((item, index) => (
-              <span className="" key={index}>
+              <div className="" key={index}>
                 <span className="">
                   <p className="">
                     /BEST RECENT WORK
@@ -170,17 +170,45 @@ const Home = () => {
                   <source src={item.videoSource} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
-              </span>
+              </div>
             ))}
             {/* end of content and video on the right */}
           </div>
-
         </div>
         {/* end of best recent work */}
 
+        {/* end of amazing video-watching adventure */}
+        <div className="bg-black text-white my-8 py-8">
+          <div className="">
+            <div className="laptop:mx-[5rem] z-50 absolute">
+              <h1 className="text-[3rem] mb-10 leading-[3.2rem]">
+                Let's Create Smile-Worthy <br />
+                Digital Content Together.
+              </h1>
+              <p className="">
+                Get ready to unlock the power of visual storytelling and take your video <br />
+                journey to new heights. Join us today and let your videos shine on Kakao!
+              </p>
+            </div>
 
+            <video
+              autoPlay
+              loop
+              muted
+              className="w-full h-screen object-cover relative"
+            >
+              {/* max-h-[40rem] */}
+              <source src={SunsetWithMountains} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            {/* <div className="backdrop-brightness-50 w-full h-screen object-cover absolute border"></div> */}
+          </div>
+        </div>
+        {/* end of amazing video-watching adventure */}
+
+        {/* maquee text */}
         <div className="text-white bg-black py-8 my-8">
-
           <Marquee loop={1} pauseOnHover>
             <ul className="flex gap-4 text-[4rem]">
               <li className="text-[8rem]">
@@ -215,7 +243,9 @@ const Home = () => {
             </ul>
           </Marquee>
         </div>
+        {/* end of marquee text */}
 
+        {/* hire us */}
         <div className="bg-black text-white my-8 py-8">
           <div className="">
             <div className="laptop:mx-[5rem] z-50 absolute">
@@ -242,9 +272,8 @@ const Home = () => {
 
             {/* <div className="backdrop-brightness-50 w-full h-screen object-cover absolute border"></div> */}
           </div>
-
-
         </div>
+        {/* end of hire us */}
 
       </motion.div>
     </section>
