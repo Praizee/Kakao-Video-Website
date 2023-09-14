@@ -40,6 +40,7 @@ export default {
       black: '900',
     }
   },
+
   plugins: [require("daisyui")],
   daisyui: {
     themes: ["light", "dark", "cupcake"],
