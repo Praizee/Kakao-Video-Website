@@ -8,6 +8,7 @@ import SunsetBeach from "../assets/Kakao-Vids/Sunset-beach.mp4";
 import BalletDancer from "../assets/Kakao-Vids/Ballet-dancer.mp4";
 import SunsetWithMountains from "../assets/Kakao-Vids/sunset-with-mountain.webm"
 import RunningThroughField from "../assets/Kakao-Vids/woman-running-through-field.mp4"
+import SnowyPeaks from "../assets/Kakao-Vids/snowy-peaks.mp4"
 import { PiArrowDownRightBold } from "react-icons/pi";
 
 const animationConfiguration = {
@@ -275,33 +276,82 @@ const Home = () => {
         {/* end of hire us */}
 
         {/* our news */}
-        <div className="my-3 hidden laptop:flex bg-black pt-28 laptop:mt-[11.91rem] laptop:mb-0 mx-4 laptop:mx-0">
+        <div className="mb-12 hidden laptop:block bg-black pt-28 pb-[15rem] laptop:mt-[rem] laptop:mb-0 mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
-            <div className="flex gap-[10rem] justify-betwee">
-              <span className="">
-                <p className="">
-                  /OUR SERVICES
+            <div className="flex relative justify-betwee gap-[rem] mr-[rem]">
+              <div className="w-full">
+                <p className="w-full">
+                  /OUR NEWS
                 </p>
-              </span>
+              </div>
 
-              <a className="flex text-[2.5rem] gap-[6rem] border uppercase border-y-white/25 border-x-transparent w-full py-12">
-                <h1 className="font-medium leading-[3.6rem]">
-                  6.17.23
-                </h1>
-                <Marquee pauseOnHover>
-                  <h1 className="font-medium text-[2.5rem] leading-[3.6rem]">
-                    Measuring Video Success&nbsp;•&nbsp;Measuring Video Success&nbsp;•&nbsp;
+              <div className="w-">
+                <a className="flex text-[2rem] border uppercase border-y-white/25 border-x-transparent py-12">
+                  <h1 className="font-medium leading-[3.6rem]">
+                    6.17.23
                   </h1>
-                </Marquee>
-              </a>
+                  <span className="border border-white/25 flex w-16 h-0 p-0 mx-8 my-6 absolut"></span>
+                  <Marquee pauseOnHover>
+                    <h1 className="font-medium text-[2rem] leading-[3.6rem]">
+                      Measuring Video Success&nbsp;•&nbsp;Measuring Video Success&nbsp;•&nbsp;
+                    </h1>
+                  </Marquee>
+                </a>
+                {/* <a className="flex text-[2rem] gap-[6rem] border uppercase border-y-white/25 border-x-transparent py-12">
+                  <h1 className="font-medium leading-[3.6rem]">
+                    6.12.23
+                  </h1>
+                  <Marquee pauseOnHover>
+                    <h1 className="font-medium text-[2rem] leading-[3.6rem]">
+                      Virtual Reality and Video&nbsp;•&nbsp;Virtual Reality and Video&nbsp;•&nbsp;
+                    </h1>
+                  </Marquee>
+                </a>
+                <a className="flex text-[2rem] gap-[6rem] border uppercase border-y-white/25 border-x-transparent py-12">
+                  <h1 className="font-medium leading-[3.6rem]">
+                    6.8.23
+                  </h1>
+                  <Marquee pauseOnHover>
+                    <h1 className="font-medium text-[2rem] leading-[3.6rem]">
+                      Capturing Aerial Perspectives&nbsp;•&nbsp;Capturing Aerial Perspectives&nbsp;•&nbsp;
+                    </h1>
+                  </Marquee>
+                </a>
+                <a className="flex text-[2rem] gap-[6rem] border uppercase border-y-white/25 border-x-transparent py-12">
+                  <h1 className="font-medium leading-[3.6rem]">
+                    6.1.23
+                  </h1>
+                  <Marquee pauseOnHover>
+                    <h1 className="font-medium text-[2rem] leading-[3.6rem]">
+                      Exploring Color Grading&nbsp;•&nbsp;Exploring Color Grading&nbsp;•&nbsp;
+                    </h1>
+                  </Marquee>
+                </a> */}
+
+              </div>
 
             </div>
-
 
           </div>
         </div>
         {/* end of our news */}
+
+        {/* snowy peak video */}
+        <div className="">
+          <video
+            autoPlay
+            loop
+            muted
+            className="w-full h-[25rem] object-cover"
+          >
+            <source src={SnowyPeaks} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div className="backdrop-brightness-75 w-full h-[25.1rem] object-cover -mt-[25rem] absolute"></div>
+        </div>
+        {/* end snowy peak video */}
+
 
       </motion.div>
     </section>
