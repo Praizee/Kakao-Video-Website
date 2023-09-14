@@ -247,7 +247,7 @@ const Home = () => {
         {/* hire us */}
         <div className="bg-black text-white">
           <div className="">
-            <div className="laptop:mx-[5rem] z-50 absolute">
+            <div className="laptop:mx-[5rem] mt-[7.5rem] z-50 absolute">
               <h1 className="text-[3rem] mb-10 leading-[3.2rem]">
                 Let's Create Smile-Worthy <br />
                 Digital Content Together.
@@ -269,10 +269,39 @@ const Home = () => {
               Your browser does not support the video tag.
             </video>
 
-            {/* <div className="backdrop-brightness-50 w-full h-screen object-cover absolute border"></div> */}
+            <div className="backdrop-brightness-50 w-full h-screen object-cover absolute -mt-[40.9rem]"></div>
           </div>
         </div>
         {/* end of hire us */}
+
+        {/* our news */}
+        <div className="my-3 hidden laptop:flex bg-black pt-28 laptop:mt-[11.91rem] laptop:mb-0 mx-4 laptop:mx-0">
+          <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
+
+            <div className="flex gap-[10rem] justify-betwee">
+              <span className="">
+                <p className="">
+                  /OUR SERVICES
+                </p>
+              </span>
+
+              <a className="flex text-[2.5rem] gap-[6rem] border uppercase border-y-white/25 border-x-transparent w-full py-12">
+                <h1 className="font-medium leading-[3.6rem]">
+                  6.17.23
+                </h1>
+                <Marquee>
+                  <h1 className="font-medium text-[2.5rem] leading-[3.6rem]">
+                    Measuring Video Success&nbsp;•&nbsp;Measuring Video Success&nbsp;•&nbsp;
+                  </h1>
+                </Marquee>
+              </a>
+
+            </div>
+
+
+          </div>
+        </div>
+        {/* end of our news */}
 
       </motion.div>
     </section>
