@@ -201,13 +201,13 @@ const Home = () => {
               Your browser does not support the video tag.
             </video>
 
-            <div className="backdrop-brightness-50 w-full h-screen object-cover absolute border"></div>
+            <div className="backdrop-brightness-50 w-full h-[calc(100vh-5.5rem)] object-cove -mt-[35.4rem] absolute"></div>
           </div>
         </div>
         {/* end of amazing video-watching adventure */}
 
         {/* maquee text */}
-        <div className="text-white bg-black py-8 my-8">
+        <div className="text-white bg-black py-8 my-">
           <Marquee loop={1} pauseOnHover>
             <ul className="flex gap-4 text-[4rem]">
               <li className="text-[8rem]">
