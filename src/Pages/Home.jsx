@@ -128,8 +128,8 @@ const Home = () => {
         {/* our services */}
 
         {/* best recent work */}
-        <div className=" hidden laptop:flex bg-black pt-28 laptop:mb-20 mx-4 laptop:mx-0">
-          <div className="laptop:mx-[5.5rem] mb-16 w-full h-[rem] text-white grid grid-cols-2 gap-24">
+        <div className=" hidden laptop:flex bg-black pt-28 laptop:mb-0 mx-4 laptop:mx-0">
+          <div className="laptop:mx-[5.5rem] mb-28 w-full h-[rem] text-white grid grid-cols-2 gap-24">
             {/* video on the left */}
             <div className="">
               <video
@@ -179,10 +179,10 @@ const Home = () => {
         {/* end of best recent work */}
 
         {/* end of amazing video-watching adventure */}
-        <div className="bg-black text-white my-8 py-8">
+        <div className="bg-black text-white">
           <div className="">
             <div className="laptop:mx-[5rem] z-50 absolute">
-              <h1 className="text-[3rem] mb-10 leading-[3.4rem]">
+              <h1 className="text-[3rem] mt-[10rem] leading-[3.4rem]">
                 GET READY TO GO <br />
                 ON AN AMAZING <br />
                 VIDEO WATCHING <br />
@@ -194,14 +194,14 @@ const Home = () => {
               autoPlay
               loop
               muted
-              className="w-full h-screen object-cover relative"
+              className="w-full max-h-[calc(100vh-5.5rem)] object-cover relative"
             >
               {/* max-h-[40rem] */}
-              <source src={SunsetWithMountains} type="video/mp4" />
+              <source src={RunningThroughField} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
 
-            {/* <div className="backdrop-brightness-50 w-full h-screen object-cover absolute border"></div> */}
+            <div className="backdrop-brightness-50 w-full h-screen object-cover absolute border"></div>
           </div>
         </div>
         {/* end of amazing video-watching adventure */}
