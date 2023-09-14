@@ -22,7 +22,7 @@ const Home = () => {
     },
     {
       title: "Best Technologies In Video Production",
-      videoSource: VRGamer, // video source
+      videoSource: BalletDancer, // video source
     },
     {
       title: "Creation Of Dynamic Visual Transitions",
