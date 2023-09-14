@@ -25,3 +25,11 @@ img {
 ::-webkit-scrollbar {
     display: none;
 }
+
+.text-outline {
+    /* -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: currentColor;
+    -webkit-text-stroke-width: .012em; */
+    color: black;
+    text-shadow: -2px 0 1px #fff, 0 2px 1px #fff, 2px 0 1px #fff, 0 -2px 1px #fff;
+}
