@@ -196,8 +196,8 @@ const Home = () => {
           </Marquee>
 
           <Marquee>
-            <ul className="flex gap-4">
-              <li className="">
+            <ul className="flex gap-4 text-[4rem]">
+              <li className="text-outline text-[8rem]">
                 Imagination
               </li>
               •
