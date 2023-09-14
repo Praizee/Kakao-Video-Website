@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./ScrollVelocity.css";
 import { useRef } from "react";
 import {
     motion,
