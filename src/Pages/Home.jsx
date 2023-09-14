@@ -7,6 +7,7 @@ import VRGamer from "../assets/Kakao-Vids/VRgamer.mp4";
 import SunsetBeach from "../assets/Kakao-Vids/Sunset-beach.mp4";
 import BalletDancer from "../assets/Kakao-Vids/Ballet-dancer.mp4";
 import SunsetWithMountains from "../assets/Kakao-Vids/sunset-with-mountain.webm"
+import RunningThroughField from "../assets/Kakao-Vids/woman-running-through-field.mp4"
 import { PiArrowDownRightBold } from "react-icons/pi";
 
 const animationConfiguration = {
@@ -181,14 +182,12 @@ const Home = () => {
         <div className="bg-black text-white my-8 py-8">
           <div className="">
             <div className="laptop:mx-[5rem] z-50 absolute">
-              <h1 className="text-[3rem] mb-10 leading-[3.2rem]">
-                Let's Create Smile-Worthy <br />
-                Digital Content Together.
+              <h1 className="text-[3rem] mb-10 leading-[3.4rem]">
+                GET READY TO GO <br />
+                ON AN AMAZING <br />
+                VIDEO WATCHING <br />
+                ADVENTURE!
               </h1>
-              <p className="">
-                Get ready to unlock the power of visual storytelling and take your video <br />
-                journey to new heights. Join us today and let your videos shine on Kakao!
-              </p>
             </div>
 
             <video
