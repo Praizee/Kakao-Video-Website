@@ -126,7 +126,7 @@ const Home = () => {
 
         {/* best recent work */}
         <div className=" hidden laptop:flex bg-black pt-28 laptop:mb-20 mx-4 laptop:mx-0">
-          <div className="laptop:mx-[5.5rem] mb-16 w-full h-[rem] text-white grid grid-cols-2 gap-8">
+          <div className="laptop:mx-[5.5rem] mb-16 w-full h-[rem] text-white grid grid-cols-2 gap-24">
             {/* video on the left */}
             <span className="">
               <video
