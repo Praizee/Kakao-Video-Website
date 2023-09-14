@@ -289,7 +289,7 @@ const Home = () => {
                 <h1 className="font-medium leading-[3.6rem]">
                   6.17.23
                 </h1>
-                <Marquee>
+                <Marquee pauseOnHover>
                   <h1 className="font-medium text-[2.5rem] leading-[3.6rem]">
                     Measuring Video Success&nbsp;•&nbsp;Measuring Video Success&nbsp;•&nbsp;
                   </h1>
