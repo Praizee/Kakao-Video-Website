@@ -245,7 +245,7 @@ const Home = () => {
         {/* end of marquee text */}
 
         {/* hire us */}
-        <div className="bg-black text-white my-8 py-8">
+        <div className="bg-black text-white">
           <div className="">
             <div className="laptop:mx-[5rem] z-50 absolute">
               <h1 className="text-[3rem] mb-10 leading-[3.2rem]">
