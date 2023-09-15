@@ -209,7 +209,7 @@ const Home = () => {
 
         {/* maquee text */}
         <div className="text-white bg-black py-8 my-">
-          <Marquee loop={1} pauseOnHover>
+          <Marquee loop={0} pauseOnHover>
             <ul className="flex gap-4 text-[4rem]">
               <li className="text-[8rem]">
                 Video
@@ -226,7 +226,7 @@ const Home = () => {
             </ul>
           </Marquee>
 
-          <Marquee loop={1} delay={30}>
+          <Marquee loop={0} pauseOnHover delay={30}>
             <ul className="flex gap-4 text-[4rem]">
               <li className="text-outline text-[8rem]">
                 Imagination
