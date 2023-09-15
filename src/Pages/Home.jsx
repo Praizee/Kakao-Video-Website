@@ -132,7 +132,7 @@ const Home = () => {
         <div className=" hidden laptop:flex bg-black pt-28 laptop:mb-0 mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-28 w-full h-[rem] text-white grid grid-cols-2 gap-24">
             {/* video on the left */}
-            <div className="">
+            <div className=" col-span-1">
               <video
                 autoPlay
                 loop
@@ -150,7 +150,7 @@ const Home = () => {
 
             {/* content and video on the right */}
             {contentData.map((item, index) => (
-              <div className="" key={index}>
+              <div className=" col-span-1" key={index}>
                 <span className="">
                   <p className="">
                     /BEST RECENT WORK
