@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
 
         <div className="footer uppercase text-white/50">
-          <div className="laptop:ml-[rem] mb-8 laptop:mb-0 tablet:mb-0">
+          <div className="laptop:ml-[6rem] mb-8 laptop:mb-0 tablet:mb-0">
             <span className="text-[0.9rem] text-white font-medium laptop:mb-4">/NAVIGATION</span>
             <a className="link link-hover font-normal text-[0.875rem] leading-[1.6rem]">Home v.1</a>
             <a className="link link-hover font-normal text-[0.875rem] leading-[1.6rem]">Home v.2</a>
@@ -58,8 +58,8 @@ const Footer = () => {
         </div>
 
         <div className="footer">
-          <div className="relative w-full mr-[12rem] border justify-between border-x-transparent border-t-transparent border-white/25">
-            <p className="mt-2 text-[1rem] font-normal leading-[1.6rem] laptop:mt-5">
+          <div className="relative w-ful mr-[13rem] border justify-between border-x-transparent border-t-transparent border-white/25">
+            <p className="mt-2 text-[1rem] text-white/50 font-normal leading-[1.6rem] laptop:mt-5">
               Get in touch with our team. Contact Us and let's create <br />
               something extraordinary.
             </p>
@@ -71,8 +71,8 @@ const Footer = () => {
               className="py-3 px-0 bg-black text-white/75 min-w-[rem] input rounded-none "
             />
 
-            <button className="btn hover:bg-transparen px-2 py-0 bg-white text-black hover:translate-x-4 absolute top-10 right-4 rounded-full border-none">
-              <FiArrowRight size="1.5rem" />
+            <button className="btn hover:bg-transparen px-2  bg-white text-black hover:translate-x-4 absolute top-20 right-4 rounded-full border-none">
+              <FiArrowRight size="1.2rem" />
             </button>
           </div>
         </div>
