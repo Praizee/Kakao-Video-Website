@@ -292,7 +292,7 @@ const Home = () => {
                     6.17.23
                   </h1>
                   <span className="border border-white/25 flex w-16 h-0 p-0 mx-8 my-6 absolut"></span>
-                  <Marquee pauseOnHover>
+                  <Marquee pauseOnHover loop={0}>
                     <h1 className="font-medium text-[2rem] leading-[3.6rem]">
                       Measuring Video Success&nbsp;•&nbsp;Measuring Video Success&nbsp;•&nbsp;
                     </h1>
