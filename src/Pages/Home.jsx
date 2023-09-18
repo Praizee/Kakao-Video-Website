@@ -269,7 +269,7 @@ const Home = () => {
               </span>
 
               {worksData.map((item, index) => (
-                <div className="gap-[3rem] flex pb-10" key={index}>
+                <div className="gap-[rem] justify-between flex pb-10" key={index}>
                   <span className="">
                     <video
                       autoPlay
