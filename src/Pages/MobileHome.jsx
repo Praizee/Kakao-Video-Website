@@ -161,7 +161,8 @@ const MobileHome = () => {
                   autoPlay
                   loop
                   muted
-                  className="w-[90%]"
+                  className="w-[90%] "
+                // min-h-[30rem]
                 >
                   <source src={item.videoSource} type="video/mp4" />
                   Your browser does not support the video tag.
@@ -279,7 +280,7 @@ const MobileHome = () => {
             </ul>
           </Marquee>
 
-          <Marquee loop={0} pauseOnHover delay={30}>
+          <Marquee loop={0} pauseOnHover delay={40}>
             <ul className="flex gap-4 text-[3rem]"> &nbsp;
               <li className="text-outline text-[3rem]">
                 Imagination
@@ -337,7 +338,7 @@ const MobileHome = () => {
 
             <div className="">
               <div className="w-full">
-                <p className="w-full">
+                <p className="w-full text-white/75 border border-white/25 border-x-transparent border-t-transparent pb-4">
                   /OUR NEWS
                 </p>
               </div>
@@ -351,6 +352,7 @@ const MobileHome = () => {
                   Measuring Video Success
                 </h1>
               </a>
+              <hr className="border border-white/25" />
               <a className="text-[2rem] uppercase border border-y-white/25 border-x-transparent py-12">
                 <h1 className="font-medium leading-[3.6rem]">
                   6.12.23
@@ -360,6 +362,7 @@ const MobileHome = () => {
                   Virtual Reality and Video
                 </h1>
               </a>
+              <hr className="border border-white/25" />
               <a className="text-[2rem] uppercase border border-white/25  border-x-transparent py-12">
                 <h1 className="font-medium leading-[3.6rem]">
                   6.8.23
@@ -369,6 +372,7 @@ const MobileHome = () => {
                   Capturing Aerial Perspectives
                 </h1>
               </a>
+              <hr className="border border-white/25" />
               <a className="text-[2rem] uppercase border border-y-white/25 border-x-transparent py-12">
                 <h1 className="font-medium leading-[3.6rem]">
                   6.1.23
@@ -378,6 +382,7 @@ const MobileHome = () => {
                   Exploring Color Grading
                 </h1>
               </a>
+              <hr className="border border-white/25" />
 
             </div>
 
