@@ -80,8 +80,6 @@ const Footer = () => {
       </footer>
 
 
-      {/* <img src={FooterLine} className="w-[80%] laptop:mx-[8rem]" alt="footer-line" /> */}
-
       <div className="laptop:flex py-10 justify-between laptop:mx-[5.7rem]">
         {/* copyright */}
         <p className="py-2 copyright laptop:mr-[rem] laptop:ml-0 mx-8 text-[0.9rem] laptop:block tablet:block text-[#ffffff74]">
