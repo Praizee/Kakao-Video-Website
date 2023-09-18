@@ -93,7 +93,7 @@ const Home = () => {
               elevate your entertainment experience. Enjoy the show!
             </p>
           </div>
-          <div className="laptop:hidden block">
+          <div className="laptop:hidden tablet:hidden block">
             <h1 className="mt-[12rem] mb-14 text-center text-[3.5rem] mx-2 leading-[4rem] font-black">
               YOUR <br /> VIDEO WORLD
             </h1>
