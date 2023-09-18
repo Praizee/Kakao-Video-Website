@@ -277,6 +277,66 @@ const Home = () => {
                 </span>
               </span>
 
+              <span className="gap-[3rem] flex pb-10">
+                <span className="">
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    className="w-[95%] min-h- rounded-md object-cove relativ"
+                  >
+                    {/* max-h-[40rem] */}
+                    <source src={GirlsRunningThroughField} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+
+                  {/* <div className="backdrop-brightness-50 w-full h-[calc(100vh-5.5rem)] object-cove -mt-[35.4rem] absolute"></div> */}
+                </span>
+
+
+                <span className="">
+                  <a className="text-[0.8rem] hover:text-white/50 cursor-pointer transition duration-500 ease-linear">
+                    CREATIVE CHRONICLES
+                  </a>
+                  <h1 className="text-[2rem] leading-[2.2rem]">
+                    Digital Dreamscape
+                  </h1>
+                  <a className="text-[0.8rem] hover:text-white/50 border border-b-white/25 border-x-transparent border-t-transparent pb-2 cursor-pointer transition duration-500 ease-linear">
+                    LEARN MORE
+                  </a>
+                </span>
+              </span>
+
+              <span className="gap-[3rem] flex pb-10">
+                <span className="">
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    className="w-[95%] min-h- rounded-md object-cove relativ"
+                  >
+                    {/* max-h-[40rem] */}
+                    <source src={GirlsRunningThroughField} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+
+                  {/* <div className="backdrop-brightness-50 w-full h-[calc(100vh-5.5rem)] object-cove -mt-[35.4rem] absolute"></div> */}
+                </span>
+
+
+                <span className="">
+                  <a className="text-[0.8rem] hover:text-white/50 cursor-pointer transition duration-500 ease-linear">
+                    CREATIVE CHRONICLES
+                  </a>
+                  <h1 className="text-[2rem] leading-[2.2rem]">
+                    Digital Dreamscape
+                  </h1>
+                  <a className="text-[0.8rem] hover:text-white/50 border border-b-white/25 border-x-transparent border-t-transparent pb-2 cursor-pointer transition duration-500 ease-linear">
+                    LEARN MORE
+                  </a>
+                </span>
+              </span>
+
 
             </div>
 
