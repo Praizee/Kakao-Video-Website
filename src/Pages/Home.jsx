@@ -143,6 +143,7 @@ const Home = () => {
                 width="3000"
                 height="5000"
                 className="w-screen h-screen"
+              // min-h-[150%]
               >
                 <source src={BestRecentWorkVideo} type="video/mp4" />
                 Your browser does not support the video tag.
@@ -205,7 +206,7 @@ const Home = () => {
               Your browser does not support the video tag.
             </video>
 
-            <div className="backdrop-brightness-50 w-full h-[calc(100vh-5.5rem)] object-cove -mt-[35.4rem] absolute"></div>
+            <div className="backdrop-brightness-50 w-full h-[calc(100vh-5.5rem)] object-cove -mt-[35.4rem] absolute left-0"></div>
           </div>
         </div>
         {/* end of amazing video-watching adventure */}
@@ -214,31 +215,43 @@ const Home = () => {
         <div className="my- border border-white/25 border-x-transparent hidden laptop:flex bg-black pt-28 laptop:mt-[rem] laptop:mb-0 mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
-            <div className="flex gap-[rem] justify-between">
-              <span className="">
+            <div className="grid grid-cols-2 gap-[rem] justify-betwee">
+              <span className="mr-[20rem]">
                 <p className="">
                   /OUR WORK
                 </p>
               </span>
 
-              <span className="flex gap-[10rem] pb-10">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  className="w-1/2 object-cover relative"
-                >
-                  {/* max-h-[40rem] */}
-                  <source src={RunningThroughField} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+              <span className="gap-[3rem] flex pb-10">
+                <span className="">
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    className="w-[95%] min-h-[140%] rounded-md object-cover relative"
+                  >
+                    {/* max-h-[40rem] */}
+                    <source src={GirlsRunningThroughField} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
 
-                <div className="backdrop-brightness-50 w-full h-[calc(100vh-5.5rem)] object-cove -mt-[35.4rem] absolute"></div>
+                  {/* <div className="backdrop-brightness-50 w-full h-[calc(100vh-5.5rem)] object-cove -mt-[35.4rem] absolute"></div> */}
+                </span>
 
-                <p>
 
-                </p>
+                <span className="">
+                  <a className="text-[0.8rem] hover:text-white/50 cursor-pointer transition duration-500 ease-linear">
+                    CREATIVE CHRONICLES
+                  </a>
+                  <h1 className="text-[2rem] leading-[2.2rem]">
+                    Digital Dreamscape
+                  </h1>
+                  <a className="text-[0.8rem] hover:text-white/50 border border-b-white/25 border-x-transparent border-t-transparent pb-2 cursor-pointer transition duration-500 ease-linear">
+                    LEARN MORE
+                  </a>
+                </span>
               </span>
+
 
             </div>
 
