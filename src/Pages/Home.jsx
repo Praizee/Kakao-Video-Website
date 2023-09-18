@@ -107,7 +107,7 @@ const Home = () => {
         </div>
 
         {/* Mobile Home */}
-        <MobileHome />
+        {/* <MobileHome /> */}
         {/* end of Mobile Home */}
 
         {/* our services */}
@@ -169,7 +169,7 @@ const Home = () => {
         {/* our services */}
 
         {/* best recent work */}
-        <div className="  laptop:flex bg-black pt-28 laptop:mb-0 mx-4 laptop:mx-0">
+        <div className=" hidden tablet:flex laptop:flex bg-black pt-28 laptop:mb-0 mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-28 w-full h-[rem] text-white grid grid-cols-2 gap-16">
             {/* gap-24 */}
             {/* video on the left */}
@@ -246,7 +246,7 @@ const Home = () => {
         {/* end of best recent work */}
 
         {/* amazing video-watching adventure */}
-        <div className="bg-black text-white">
+        <div className="bg-black tablet:block hidden text-white">
           <div className="">
             <div className="laptop:mx-[5rem] z-50 absolute">
               <h1 className="text-[3rem] mt-[10rem] leading-[3.4rem]">
@@ -274,7 +274,7 @@ const Home = () => {
         {/* end of amazing video-watching adventure */}
 
         {/* our works */}
-        <div className="my- border border-white/25 border-x-transparent  laptop:flex bg-black pt-28 laptop:mt-[rem] laptop:mb-0 mx-4 laptop:mx-0">
+        <div className="my- border border-white/25 border-x-transparent hidden tablet:flex laptop:flex bg-black pt-28 laptop:mt-[rem] laptop:mb-0 mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
             <div className="grid grid-cols-2 gap-8">
@@ -320,7 +320,7 @@ const Home = () => {
         {/* end of our works */}
 
         {/* maquee text */}
-        <div className="text-white bg-black py-8 my-">
+        <div className="text-white hidden laptop:block tablet:block bg-black py-8 my-">
           <Marquee loop={0} pauseOnHover>
             <ul className="flex gap-4 text-[4rem]">
               <li className="text-[8rem]">
