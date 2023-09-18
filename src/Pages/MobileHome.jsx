@@ -310,7 +310,7 @@ const MobileHome = () => {
                 Get ready to unlock the power of visual storytelling and take your video
                 journey to new heights. Join us today and let your videos shine on Kakao!
               </p>
-              <p className="uppercase text-[0.875rem] mt-20 mx-[9rem] text-center py-12 px- w-[40%] rotate-45 hover:rotate-0 transition ease-linear border rounded-full">
+              <p className="uppercase hover:shadow-[0_.5px_4px_white] text-[0.875rem] mt-20 mx-[9rem] text-center py-12 px- w-[40%] rotate-45 hover:rotate-0 transition ease-linear border rounded-full">
                 Hire us!
               </p>
             </div>
