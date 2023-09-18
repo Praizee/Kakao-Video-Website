@@ -59,7 +59,7 @@ const MobileHome = () => {
   ];
 
   return (
-    <section className="text-black bg-white block tablet:hidden laptop:hidden">
+    <section className=" bg-black block tablet:hidden laptop:hidden">
       <motion.div
         variants={animationConfiguration}
         initial="initial"
@@ -68,22 +68,13 @@ const MobileHome = () => {
         transition={{ duration: 3 }}
       >
 
-        <video
-          autoPlay
-          loop
-          muted
-          className="w-full h-screen object-cover absolute top-0 left-0"
-        >
-          <source src={BgVideo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div className="backdrop-brightness-50 w-full h-screen object-cover absolute top-0 left-0"></div>
+        {/* continued from Home.jsx */}
 
         {/* our services */}
-        <div className="my-3 block bg-black pt-28 mt-[11.91rem] mb-0 mx-0">
-          <div className="mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
+        <div className="my-3 block border bg-black  mt-[36rem] p-4 mb-0 mx-0">
+          <div className=" mb-16 w-full h-[22.2rem]  text-white">
 
-            <div className="flex gap-[rem] justify-between">
+            <div className="">
               <span className="">
                 <p className="">
                   /OUR SERVICES
@@ -103,7 +94,7 @@ const MobileHome = () => {
 
             </div>
 
-            <div className="grid grid-cols-3 mt-2 gap-4 ml-[20.4rem]">
+            <div className="grid grid-cols-1 mt-2 gap-4 ml-[20.4rem]">
               <span className="p-4">
                 <h1 className="mb-12 text-[2rem] font-medium">
                   Variety
@@ -138,8 +129,8 @@ const MobileHome = () => {
         {/* our services */}
 
         {/* best recent work */}
-        <div className="  flex bg-black pt-28 mb-0 mx-4 mx-0">
-          <div className="mx-[5.5rem] mb-28 w-full h-[rem] text-white grid grid-cols-2 gap-16">
+        <div className="flex bg-black pt-28 mb-0">
+          <div className="mx-[rem] mb-28 w-full h-[rem] text-white grid grid-cols-1 gap-16">
             {/* gap-24 */}
             {/* video on the left */}
             <div className=" col-span-1">
@@ -217,7 +208,7 @@ const MobileHome = () => {
         {/* amazing video-watching adventure */}
         <div className="bg-black text-white">
           <div className="">
-            <div className="mx-[5rem] z-50 absolute">
+            <div className="mx-[rem] z-50 absolute">
               <h1 className="text-[3rem] mt-[10rem] leading-[3.4rem]">
                 GET READY TO GO <br />
                 ON AN AMAZING <br />
@@ -243,10 +234,10 @@ const MobileHome = () => {
         {/* end of amazing video-watching adventure */}
 
         {/* our works */}
-        <div className="my- border border-white/25 border-x-transparent  flex bg-black pt-28 mt-[rem] mb-0 mx-4 mx-0">
+        <div className="my- border border-white/25 border-x-transparent  flex bg-black pt-28 mt-[rem] mb-0">
           <div className="mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
-            <div className="grid grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 gap-8">
               <span className="mr-[rem]">
                 <p className="text-">
                   /OUR WORK
@@ -357,7 +348,7 @@ const MobileHome = () => {
         {/* end of hire us */}
 
         {/* our news */}
-        <div className="mb-12  block bg-black pt-28 pb-[15rem] mt-[rem] mb-0 mx-4 mx-0">
+        <div className="mb-12 block bg-black pt-28 pb-[15rem] mt-[rem]">
           <div className="mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
             <div className="flex relative justify-betwee gap-[rem] mr-[rem]">
