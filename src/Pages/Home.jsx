@@ -450,7 +450,7 @@ const Home = () => {
         {/* end of our news */}
 
         {/* snowy peak video */}
-        <div className="">
+        <div className="hidden laptop:block tablet:block">
           <video
             autoPlay
             loop
