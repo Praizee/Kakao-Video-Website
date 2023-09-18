@@ -53,12 +53,12 @@ const Footer = () => {
 
       <footer className="footer justify-between mx-2 laptop:p-0 laptop:py-16 p-6 max-w-[90%] laptop:mx-[5.6rem] border border-white/25 border-x-transparent">
 
-        <div className="w-[350%]">
+        <div className="laptop:w-[350%] w-[80%]">
           <img src={KakaoLogo} className="w-full" alt="web-logo" />
         </div>
 
         <div className="footer">
-          <div className="relative w-ful mr-[13rem] border justify-between border-x-transparent border-t-transparent border-white/25">
+          <div className="relative w-ful laptop:mr-[13rem] border justify-between border-x-transparent border-t-transparent border-white/25">
             <p className="mt-2 text-[1rem] text-white/50 font-normal leading-[1.6rem] laptop:mt-5">
               Get in touch with our team. Contact Us and let's create <br />
               something extraordinary.
