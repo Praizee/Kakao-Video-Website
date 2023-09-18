@@ -139,26 +139,8 @@ const MobileHome = () => {
         {/* our services */}
 
         {/* best recent work */}
-        <div className="mt-[40rem] bg-black pt-28 mb-0">
-          <div className=" mb-28 w-full h-[rem] text-white grid grid-cols-1 gap-1">
-            {/* gap-24 */}
-            {/* video on the left */}
-            <div className="">
-              <video
-                autoPlay
-                loop
-                muted
-                // width="3000"
-                // height="5000"
-                className="w- h-"
-              // min-h-[150%]
-              >
-                <source src={BestRecentWorkVideo} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              {/* <span className="backdrop-brightness-50 w-full h-screen object-cover absolute top-0 left-0"></span> */}
-            </div>
-            {/* end of video on the left */}
+        <div className="mt-[21rem] bg-black pt-28 mb-0">
+          <div className=" mb-28 mx-4 w-full h-[rem] text-white grid grid-cols-1 gap-1">
 
             {/* content and video on the right */}
             <div className="col-span-1">
@@ -169,7 +151,7 @@ const MobileHome = () => {
               </span>
 
               <span className="flex gap-[10rem] mb-8">
-                <h1 className="text-[3.5rem] mt-8  font-medium leading-[4rem]">
+                <h1 className="text-[2.5rem] mt-8  font-medium leading-[3rem]">
                   Creating An Effective Video Ad Campaign
                 </h1>
               </span>
@@ -178,7 +160,7 @@ const MobileHome = () => {
                 autoPlay
                 loop
                 muted
-                className="w-full"
+                className="w-[90%] h-[%]"
               >
                 <source src={VRGamer} type="video/mp4" />
                 Your browser does not support the video tag.
