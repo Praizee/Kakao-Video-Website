@@ -13,6 +13,7 @@ import GirlsRunningThroughField from "../assets/Kakao-Vids/girls-running-through
 import ExcitedVRLady from "../assets/Kakao-Vids/excited-vr-lady.mp4"
 import FlowersAndReading from "../assets/Kakao-Vids/flowers and reading.mp4"
 import { PiArrowDownRightBold } from "react-icons/pi";
+import MobileHome from "./MobileHome";
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -81,7 +82,7 @@ const Home = () => {
 
         <div className="laptop:mt-[25rem] text-white h-[4rem] relative z-10 p-4 laptop:p-0 mt-[10rem] mb-0 laptop:mx-[5rem] ">
 
-          <div>
+          <div className="hidden laptop:block tablet:block">
             <h1 className="laptop:text-[5rem] text-[3rem] mx-2 laptop:mx- laptop:leading-[8rem] font-black">
               YOUR VIDEO WORLD
             </h1>
@@ -92,10 +93,25 @@ const Home = () => {
               elevate your entertainment experience. Enjoy the show!
             </p>
           </div>
+          <div className="laptop:hidden block">
+            <h1 className="mt-[12rem] mb-16 text-center text-[3.5rem] mx-2 leading-[4rem] font-black">
+              YOUR <br /> VIDEO WORLD
+            </h1>
+
+            <p className="mx-1 text-center">
+              Welcome to Kakao, the ultimate video streaming
+              platform designed to
+              elevate your entertainment experience. Enjoy the show!
+            </p>
+          </div>
         </div>
 
+        {/* Mobile Home */}
+        <MobileHome />
+        {/* end of Mobile Home */}
+
         {/* our services */}
-        <div className="my-3 hidden laptop:flex bg-black pt-28 laptop:mt-[11.91rem] laptop:mb-0 mx-4 laptop:mx-0">
+        <div className="my-3 hidden tablet:flex laptop:flex bg-black pt-28 laptop:mt-[11.91rem] laptop:mb-0 mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
             <div className="flex gap-[rem] justify-between">
@@ -153,7 +169,7 @@ const Home = () => {
         {/* our services */}
 
         {/* best recent work */}
-        <div className=" hidden laptop:flex bg-black pt-28 laptop:mb-0 mx-4 laptop:mx-0">
+        <div className="  laptop:flex bg-black pt-28 laptop:mb-0 mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-28 w-full h-[rem] text-white grid grid-cols-2 gap-16">
             {/* gap-24 */}
             {/* video on the left */}
@@ -258,7 +274,7 @@ const Home = () => {
         {/* end of amazing video-watching adventure */}
 
         {/* our works */}
-        <div className="my- border border-white/25 border-x-transparent hidden laptop:flex bg-black pt-28 laptop:mt-[rem] laptop:mb-0 mx-4 laptop:mx-0">
+        <div className="my- border border-white/25 border-x-transparent  laptop:flex bg-black pt-28 laptop:mt-[rem] laptop:mb-0 mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
             <div className="grid grid-cols-2 gap-8">
@@ -372,7 +388,7 @@ const Home = () => {
         {/* end of hire us */}
 
         {/* our news */}
-        <div className="mb-12 hidden laptop:block bg-black pt-28 pb-[15rem] laptop:mt-[rem] laptop:mb-0 mx-4 laptop:mx-0">
+        <div className="mb-12  laptop:block bg-black pt-28 pb-[15rem] laptop:mt-[rem] laptop:mb-0 mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
             <div className="flex relative justify-betwee gap-[rem] mr-[rem]">
