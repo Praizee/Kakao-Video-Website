@@ -208,7 +208,7 @@ const Home = () => {
         {/* end of amazing video-watching adventure */}
 
         {/* our works */}
-        <div className="my-3 hidden laptop:flex bg-black pt-28 laptop:mt-[11.91rem] laptop:mb-0 mx-4 laptop:mx-0">
+        <div className="my- border border-white/25 border-x-transparent hidden laptop:flex bg-black pt-28 laptop:mt-[rem] laptop:mb-0 mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
             <div className="flex gap-[rem] justify-between">
@@ -218,15 +218,23 @@ const Home = () => {
                 </p>
               </span>
 
-              <span className="flex gap-[10rem] border border-b-white/25 border-x-transparent border-t-transparent pb-10">
-                <h1 className="text-[3.5rem] font-medium leading-[3.6rem]">
-                  All Your Video Content <br />
-                  Needs! Let's Create!
-                </h1>
+              <span className="flex gap-[10rem] pb-10">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  className="w-1/2 object-cover relative"
+                >
+                  {/* max-h-[40rem] */}
+                  <source src={RunningThroughField} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
 
-                <span className="p-4 border h-auto rounded-full ">
-                  <PiArrowDownRightBold size={20} />
-                </span>
+                <div className="backdrop-brightness-50 w-full h-[calc(100vh-5.5rem)] object-cove -mt-[35.4rem] absolute"></div>
+
+                <p>
+
+                </p>
               </span>
 
             </div>
