@@ -396,7 +396,7 @@ const MobileHome = () => {
             <source src={SnowyPeaks} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="backdrop-brightness-75 h-[20rem] w-full object-cover border -mt-[25.9rem] absolute"></div>
+          <div className="backdrop-brightness-75 h-[20rem] w-full object-cover -mt-[19.9rem] absolute"></div>
         </div>
         {/* end snowy peak video */}
 
