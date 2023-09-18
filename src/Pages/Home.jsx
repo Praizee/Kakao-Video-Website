@@ -207,6 +207,34 @@ const Home = () => {
         </div>
         {/* end of amazing video-watching adventure */}
 
+        {/* our works */}
+        <div className="my-3 hidden laptop:flex bg-black pt-28 laptop:mt-[11.91rem] laptop:mb-0 mx-4 laptop:mx-0">
+          <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
+
+            <div className="flex gap-[rem] justify-between">
+              <span className="">
+                <p className="">
+                  /OUR WORK
+                </p>
+              </span>
+
+              <span className="flex gap-[10rem] border border-b-white/25 border-x-transparent border-t-transparent pb-10">
+                <h1 className="text-[3.5rem] font-medium leading-[3.6rem]">
+                  All Your Video Content <br />
+                  Needs! Let's Create!
+                </h1>
+
+                <span className="p-4 border h-auto rounded-full ">
+                  <PiArrowDownRightBold size={20} />
+                </span>
+              </span>
+
+            </div>
+
+          </div>
+        </div>
+        {/* end of our works */}
+
         {/* maquee text */}
         <div className="text-white bg-black py-8 my-">
           <Marquee loop={0} pauseOnHover>
