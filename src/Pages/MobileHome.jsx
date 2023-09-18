@@ -13,6 +13,7 @@ import FlowersAndReading from "../assets/Kakao-Vids/flowers and reading.mp4"
 import VRShooter from "../assets/Kakao-Vids/VR-shooter.mp4"
 import SnowStorm from "../assets/Kakao-Vids/snow-storm.mp4"
 import Eyes from "../assets/Kakao-Vids/eyes.mp4"
+import { PiArrowUpRightBold } from "react-icons/pi";
 import { PiArrowDownRightBold } from "react-icons/pi";
 
 const animationConfiguration = {
@@ -138,11 +139,11 @@ const MobileHome = () => {
 
         {/* best recent work */}
         <div className="mt-[21rem] bg-black pt-28 mb-0">
-          <div className=" mb-28 mx-4 w-full h-[rem] text-white grid grid-cols-1 gap-1">
+          <div className=" mb-16 mx-4 w-full h-[rem] text-white grid grid-cols-1 gap-16">
 
             {/* content and video on the right */}
             {contentData.map((item, index) => (
-              <div className=" col-span-1 row-span-1" key={index}>
+              <div className="" key={index}>
                 <span className="">
                   <p className="">
                     /BEST RECENT WORK
@@ -150,7 +151,7 @@ const MobileHome = () => {
                 </span>
 
                 <span className="flex gap-[10rem] mb-8">
-                  <h1 className="text-[2.1rem] mt-8  font-medium leading-[3rem]">
+                  <h1 className="text-[2.5rem] w-[90%] mt-8  font-medium leading-[3rem]">
                     {item.title}
                   </h1>
                 </span>
@@ -159,11 +160,23 @@ const MobileHome = () => {
                   autoPlay
                   loop
                   muted
-                  className="w-ful w-[90%]"
+                  className="w-[90%]"
                 >
                   <source src={item.videoSource} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
+                <p className="text-white/50 w-[90%] py-4">
+                  Step into a captivating realm of digital creativity, where video artistry knows no bounds. Welcome to Kakao, your gateway to a mesmerizing collection of video masterpieces.
+                </p>
+                <span className="">
+                  <button className="btn mt-4 bg-transparent text-white hover:bg-transparent font-almostsemibold border uppercase rounded-full transition duration-300 ease-linear hover:shadow-[0_.5px_8px_white]">
+                    learn more
+                    <span className="">
+                      {/* hover:-translate-y-2 */}
+                      <PiArrowUpRightBold size={15} />
+                    </span>
+                  </button>
+                </span>
               </div>
             ))}
             {/* end of content and video on the right */}
@@ -175,11 +188,8 @@ const MobileHome = () => {
         <div className="bg-black text-white">
           <div className="">
             <div className="mx-[rem] z-50 absolute">
-              <h1 className="text-[3rem] mt-[10rem] leading-[3.4rem]">
-                GET READY TO GO
-                ON AN AMAZING
-                VIDEO WATCHING
-                ADVENTURE!
+              <h1 className="text-[2.5rem] text-center w-[80%] mt-[10rem] leading-[3.2rem]">
+                Your Amazing Video Watching Adventure!
               </h1>
             </div>
 
@@ -187,14 +197,14 @@ const MobileHome = () => {
               autoPlay
               loop
               muted
-              className="w-full max-h-[calc(100vh-5.5rem)] object-cover relative"
+              className="w-full min-h-[35rem] object-cover relative"
             >
               {/* max-h-[40rem] */}
               <source src={RunningThroughField} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
 
-            <div className="backdrop-brightness-50 w-full h-[calc(100vh-5.5rem)] object-cove -mt-[35.4rem] absolute left-0"></div>
+            <div className="backdrop-brightness-50 border w-full h-[40%] -mt-[35.4rem] absolute left-0"></div>
           </div>
         </div>
         {/* end of amazing video-watching adventure */}
