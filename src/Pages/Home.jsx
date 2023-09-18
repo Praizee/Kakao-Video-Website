@@ -9,6 +9,9 @@ import BalletDancer from "../assets/Kakao-Vids/Ballet-dancer.mp4";
 import SunsetWithMountains from "../assets/Kakao-Vids/sunset-with-mountain.webm"
 import RunningThroughField from "../assets/Kakao-Vids/woman-running-through-field.mp4"
 import SnowyPeaks from "../assets/Kakao-Vids/snowy-peaks.mp4"
+import GirlsRunningThroughField from "../assets/Kakao-Vids/girls-running-through-field.mp4"
+import ExcitedVRLady from "../assets/Kakao-Vids/excited-vr-lady.mp4"
+import FlowersAndReading from "../assets/Kakao-Vids/flowers and reading.mp4"
 import { PiArrowDownRightBold } from "react-icons/pi";
 
 const animationConfiguration = {
