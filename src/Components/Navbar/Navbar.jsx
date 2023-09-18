@@ -3,6 +3,7 @@ import { NavLink, Link } from "react-router-dom";
 import { NavbarData } from "./NavbarData.jsx"
 import KakaoLogo from "../../assets/New Kakao Logo.svg"
 import { PiArrowUpRightBold } from "react-icons/pi";
+import MultiLevelSidebar from "../../Components/SideBar/SideBar"
 
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false)
@@ -105,23 +106,9 @@ const Navbar = () => {
           {/* end of hamburger menu */}
 
           {/* mobile navbar */}
-          {showNav && <ul tabIndex={0} className="absolute flex w-full p-12 -ml-[18.7rem] mt-2 border border-t-2 z-[10] bg-black">
-            {/* dropdown-content */}
-            {NavbarData.map((item, index) => {
-              return (
-                <li key={index} className="">
-                  {/* "flex min-w-max p-4" */}
-                  <NavLink to={item.path} className={({ isActive }) =>
-                    isActive ? 'flex min-w-max ' : 'flex rounded-none min-w-max'
-                  }>
-                    <span className="p-4 text-white bg-transparent hover:bg-transparent mx-1 btn">
-                      {item.title}
-                    </span>
-                  </NavLink>
-                </li>
-              );
-            })}
-          </ul>}
+          {showNav &&
+            <MultiLevelSidebar />
+          }
           {/* end of mobile navbar */}
         </div>
       </div>
@@ -144,3 +131,21 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+// {showNav && <ul tabIndex={0} className="absolute flex w-full p-12 -ml-[18.7rem] mt-2 border border-t-2 z-[10] bg-black">
+//             {/* dropdown-content */}
+//             {NavbarData.map((item, index) => {
+//               return (
+//                 <li key={index} className="">
+//                   {/* "flex min-w-max p-4" */}
+//                   <NavLink to={item.path} className={({ isActive }) =>
+//                     isActive ? 'flex min-w-max ' : 'flex rounded-none min-w-max'
+//                   }>
+//                     <span className="p-4 text-white bg-transparent hover:bg-transparent mx-1 btn">
+//                       {item.title}
+//                     </span>
+//                   </NavLink>
+//                 </li>
+//               );
+//             })}
+//           </ul>}
