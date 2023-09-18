@@ -274,7 +274,7 @@ const Home = () => {
         {/* end of amazing video-watching adventure */}
 
         {/* our works */}
-        <div className="my- border border-white/25 border-x-transparent hidden tablet:flex laptop:flex bg-black pt-28 laptop:mt-[rem] laptop:mb-0 mx-4 laptop:mx-0">
+        <div className="pb-24 border border-white/25 border-x-transparent hidden tablet:flex laptop:flex bg-black pt-28 laptop:mt-[rem] laptop:mb-0 mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
             <div className="grid grid-cols-2 gap-8">
