@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
 import BgVideo from "../assets/Kakao-Vids/Webflow - Kakao-main.mp4";
-import BestRecentWorkVideo from "../assets/Kakao-Vids/pexels shvets production 7547019 3840x2160 25fps.mp4";
+import BestRecentWorkVideo from "../assets/Kakao-Vids/best-recent-works.mp4";
 import VRGamer from "../assets/Kakao-Vids/VRgamer.mp4";
 import SunsetBeach from "../assets/Kakao-Vids/Sunset-beach.mp4";
 import BalletDancer from "../assets/Kakao-Vids/Ballet-dancer.mp4";
@@ -229,7 +229,7 @@ const Home = () => {
         </div>
         {/* end of best recent work */}
 
-        {/* end of amazing video-watching adventure */}
+        {/* amazing video-watching adventure */}
         <div className="bg-black text-white">
           <div className="">
             <div className="laptop:mx-[5rem] z-50 absolute">
@@ -261,30 +261,28 @@ const Home = () => {
         <div className="my- border border-white/25 border-x-transparent hidden laptop:flex bg-black pt-28 laptop:mt-[rem] laptop:mb-0 mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
-            <div className="grid grid-cols-2 gap-0 justify-betwee">
-              <span className="mr-[20rem]">
+            <div className="grid grid-cols-2 gap-8">
+              <span className="mr-[rem]">
                 <p className="text-">
                   /OUR WORK
                 </p>
               </span>
 
               {worksData.map((item, index) => (
-                <div className="gap-[rem] justify-between flex pb-10" key={index}>
+                <div className="gap-[3rem] justify-between flex pb-10" key={index}>
                   <span className="">
                     <video
                       autoPlay
                       loop
                       muted
-                      className="w-[95%] min-h- rounded-md object-cove relativ"
+                      className="w-[%] min-h- rounded-md object-cover relativ"
                     >
                       {/* max-h-[40rem] */}
                       <source src={item.videoSource} type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
-
                     {/* <div className="backdrop-brightness-50 w-full h-[calc(100vh-5.5rem)] object-cove -mt-[35.4rem] absolute"></div> */}
                   </span>
-
 
                   <span className="">
                     <a className="text-[0.8rem] hover:text-white/50 cursor-pointer transition duration-500 ease-linear">
@@ -299,8 +297,6 @@ const Home = () => {
                   </span>
                 </div>
               ))}
-
-
             </div>
 
           </div>
