@@ -12,6 +12,9 @@ import SnowyPeaks from "../assets/Kakao-Vids/snowy-peaks.mp4"
 import GirlsRunningThroughField from "../assets/Kakao-Vids/girls-running-through-field.mp4"
 import ExcitedVRLady from "../assets/Kakao-Vids/excited-vr-lady.mp4"
 import FlowersAndReading from "../assets/Kakao-Vids/flowers and reading.mp4"
+import VRShooter from "../assets/Kakao-Vids/VR-shooter.mp4"
+import SnowStorm from "../assets/Kakao-Vids/snow-storm.mp4"
+import Eyes from "../assets/Kakao-Vids/eyes.mp4"
 import { PiArrowDownRightBold } from "react-icons/pi";
 
 const animationConfiguration = {
@@ -58,6 +61,24 @@ const MobileHome = () => {
     },
   ];
 
+  const servicesData = [
+    {
+      title: "Variety",
+      description: "Digital Dreamscape",
+      videoSource: VRShooter, // video source
+    },
+    {
+      title: "Quality",
+      description: "Digital Dreamscape",
+      videoSource: SnowStorm, // video source
+    },
+    {
+      title: "Innovation",
+      description: "Digital Dreamscape",
+      videoSource: Eyes, // video source
+    },
+  ];
+
   return (
     <section className=" bg-black block tablet:hidden laptop:hidden">
       <motion.div
@@ -71,57 +92,46 @@ const MobileHome = () => {
         {/* continued from Home.jsx */}
 
         {/* our services */}
-        <div className="my-3 block border bg-black  mt-[36rem] p-4 mb-0 mx-0">
+        <div className="my-3 block bg-black mt-[32rem] pt-16 p-4 mb-0 mx-0">
           <div className=" mb-16 w-full h-[22.2rem]  text-white">
 
             <div className="">
-              <span className="">
-                <p className="">
-                  /OUR SERVICES
-                </p>
-              </span>
+              <p className="">
+                /OUR SERVICES
+              </p>
 
-              <span className="flex gap-[10rem] border border-b-white/25 border-x-transparent border-t-transparent pb-10">
-                <h1 className="text-[3.5rem] font-medium leading-[3.6rem]">
-                  All Your Video Content <br />
+              <span className="py-8">
+                <h1 className="text-[2.5rem] border border-b-white/25 border-x-transparent border-t-transparent pb-10 font-medium leading-[2.9rem]">
+                  All Your Video Content
                   Needs! Let's Create!
                 </h1>
-
-                <span className="p-4 border h-auto rounded-full ">
-                  <PiArrowDownRightBold size={20} />
-                </span>
               </span>
 
             </div>
 
-            <div className="grid grid-cols-1 mt-2 gap-4 ml-[20.4rem]">
-              <span className="p-4">
-                <h1 className="mb-12 text-[2rem] font-medium">
-                  Variety
-                </h1>
-                <p className="text-white/75 font-light">
-                  Watch your favourite videos in <br />
-                  one click.
-                </p>
-              </span>
-              <span className="p-4">
-                <h1 className="mb-12 text-[2rem] font-medium">
-                  Quality
-                </h1>
-                <p className="text-white/75 font-light">
-                  Watch your favourite videos in <br />
-                  one click.
-                </p>
-              </span>
-              <span className="p-4">
-                <h1 className="mb-12 text-[2rem] font-medium">
-                  Innovation
-                </h1>
-                <p className="text-white/75 font-light">
-                  Watch your favourite videos in <br />
-                  one click.
-                </p>
-              </span>
+            <div className="grid grid-cols-1 mt-8 gap-4">
+              {servicesData.map((item, index) => (
+                <div className="" key={index}>
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    className="rounded-lg bg-cover object-cover w-full h-[11.5rem]"
+                  >
+                    <source src={item.videoSource} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <span className="-mt-[11.5rem] px-6 py-8 z-50 absolute backdrop-brightness-50">
+                    <h1 className="mb-12 text-[2rem] font-medium">
+                      {item.title}
+                    </h1>
+                    <p className="text-white font-light">
+                      Watch your favourite videos in
+                      one click.
+                    </p>
+                  </span>
+                </div>
+              ))}
             </div>
 
           </div>
@@ -129,18 +139,18 @@ const MobileHome = () => {
         {/* our services */}
 
         {/* best recent work */}
-        <div className="flex bg-black pt-28 mb-0">
-          <div className="mx-[rem] mb-28 w-full h-[rem] text-white grid grid-cols-1 gap-16">
+        <div className="mt-[40rem] bg-black pt-28 mb-0">
+          <div className=" mb-28 w-full h-[rem] text-white grid grid-cols-1 gap-1">
             {/* gap-24 */}
             {/* video on the left */}
-            <div className=" col-span-1">
+            <div className="">
               <video
                 autoPlay
                 loop
                 muted
                 // width="3000"
                 // height="5000"
-                className="w-screen h-screen"
+                className="w- h-"
               // min-h-[150%]
               >
                 <source src={BestRecentWorkVideo} type="video/mp4" />
@@ -210,9 +220,9 @@ const MobileHome = () => {
           <div className="">
             <div className="mx-[rem] z-50 absolute">
               <h1 className="text-[3rem] mt-[10rem] leading-[3.4rem]">
-                GET READY TO GO <br />
-                ON AN AMAZING <br />
-                VIDEO WATCHING <br />
+                GET READY TO GO
+                ON AN AMAZING
+                VIDEO WATCHING
                 ADVENTURE!
               </h1>
             </div>
@@ -322,11 +332,11 @@ const MobileHome = () => {
           <div className="">
             <div className="mx-[5rem] mt-[7.5rem] z-50 absolute">
               <h1 className="text-[3rem] mb-10 leading-[3.2rem]">
-                Let's Create Smile-Worthy <br />
+                Let's Create Smile-Worthy
                 Digital Content Together.
               </h1>
               <p className="">
-                Get ready to unlock the power of visual storytelling and take your video <br />
+                Get ready to unlock the power of visual storytelling and take your video
                 journey to new heights. Join us today and let your videos shine on Kakao!
               </p>
             </div>
