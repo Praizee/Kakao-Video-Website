@@ -23,10 +23,10 @@ const animationConfiguration = {
 const Home = () => {
 
   const contentData = [
-    {
-      title: "Creating An Effective Video Ad Campaign",
-      videoSource: VRGamer, // video source
-    },
+    // {
+    //   title: "Creating An Effective Video Ad Campaign",
+    //   videoSource: VRGamer, // video source
+    // },
     {
       title: "Best Technologies In Video Production",
       videoSource: BalletDancer, // video source
@@ -133,15 +133,16 @@ const Home = () => {
 
         {/* best recent work */}
         <div className=" hidden laptop:flex bg-black pt-28 laptop:mb-0 mx-4 laptop:mx-0">
-          <div className="laptop:mx-[5.5rem] mb-28 w-full h-[rem] text-white grid grid-cols-2 gap-24">
+          <div className="laptop:mx-[5.5rem] mb-28 w-full h-[rem] text-white grid grid-cols-2 gap-16">
+            {/* gap-24 */}
             {/* video on the left */}
             <div className=" col-span-1">
               <video
                 autoPlay
                 loop
                 muted
-                width="3000"
-                height="5000"
+                // width="3000"
+                // height="5000"
                 className="w-screen h-screen"
               // min-h-[150%]
               >
@@ -153,8 +154,32 @@ const Home = () => {
             {/* end of video on the left */}
 
             {/* content and video on the right */}
+            <div className="col-span-1">
+              <span className="">
+                <p className="">
+                  /BEST RECENT WORK
+                </p>
+              </span>
+
+              <span className="flex gap-[10rem] mb-8">
+                <h1 className="text-[3.5rem] mt-8  font-medium leading-[4rem]">
+                  Creating An Effective Video Ad Campaign
+                </h1>
+              </span>
+
+              <video
+                autoPlay
+                loop
+                muted
+                className="w-full"
+              >
+                <source src={VRGamer} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
             {contentData.map((item, index) => (
-              <div className=" col-span-1" key={index}>
+              <div className=" col-span-1 row-span-1" key={index}>
                 <span className="">
                   <p className="">
                     /BEST RECENT WORK
@@ -215,9 +240,9 @@ const Home = () => {
         <div className="my- border border-white/25 border-x-transparent hidden laptop:flex bg-black pt-28 laptop:mt-[rem] laptop:mb-0 mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
-            <div className="grid grid-cols-2 gap-[rem] justify-betwee">
+            <div className="grid grid-cols-2 gap-0 justify-betwee">
               <span className="mr-[20rem]">
-                <p className="">
+                <p className="text-">
                   /OUR WORK
                 </p>
               </span>
@@ -228,7 +253,7 @@ const Home = () => {
                     autoPlay
                     loop
                     muted
-                    className="w-[95%] min-h-[140%] rounded-md object-cover relative"
+                    className="w-[95%] min-h- rounded-md object-cove relativ"
                   >
                     {/* max-h-[40rem] */}
                     <source src={GirlsRunningThroughField} type="video/mp4" />
