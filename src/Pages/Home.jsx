@@ -37,6 +37,27 @@ const Home = () => {
     },
   ];
 
+  const worksData = [
+    {
+      title: "CREATIVE CHRONICLES",
+      heading: "Digital Dreamscape",
+      button: "LEARN MORE",
+      videoSource: GirlsRunningThroughField, // video source
+    },
+    {
+      title: "EMOTIONAL JOURNEYS",
+      heading: "Visual Alchemy",
+      button: "LEARN MORE",
+      videoSource: ExcitedVRLady, // video source
+    },
+    {
+      title: "VISUAL SYMPHONY",
+      heading: "Motion Mosaics",
+      button: "LEARN MORE",
+      videoSource: FlowersAndReading, // video source
+    },
+  ];
+
   return (
     <section className="text-black bg-white">
       <motion.div
@@ -247,95 +268,37 @@ const Home = () => {
                 </p>
               </span>
 
-              <span className="gap-[3rem] flex pb-10">
-                <span className="">
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    className="w-[95%] min-h- rounded-md object-cove relativ"
-                  >
-                    {/* max-h-[40rem] */}
-                    <source src={GirlsRunningThroughField} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+              {worksData.map((item, index) => (
+                <div className="gap-[3rem] flex pb-10" key={index}>
+                  <span className="">
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      className="w-[95%] min-h- rounded-md object-cove relativ"
+                    >
+                      {/* max-h-[40rem] */}
+                      <source src={item.videoSource} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
 
-                  {/* <div className="backdrop-brightness-50 w-full h-[calc(100vh-5.5rem)] object-cove -mt-[35.4rem] absolute"></div> */}
-                </span>
-
-
-                <span className="">
-                  <a className="text-[0.8rem] hover:text-white/50 cursor-pointer transition duration-500 ease-linear">
-                    CREATIVE CHRONICLES
-                  </a>
-                  <h1 className="text-[2rem] leading-[2.2rem]">
-                    Digital Dreamscape
-                  </h1>
-                  <a className="text-[0.8rem] hover:text-white/50 border border-b-white/25 border-x-transparent border-t-transparent pb-2 cursor-pointer transition duration-500 ease-linear">
-                    LEARN MORE
-                  </a>
-                </span>
-              </span>
-
-              <span className="gap-[3rem] flex pb-10">
-                <span className="">
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    className="w-[95%] min-h- rounded-md object-cove relativ"
-                  >
-                    {/* max-h-[40rem] */}
-                    <source src={GirlsRunningThroughField} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-
-                  {/* <div className="backdrop-brightness-50 w-full h-[calc(100vh-5.5rem)] object-cove -mt-[35.4rem] absolute"></div> */}
-                </span>
+                    {/* <div className="backdrop-brightness-50 w-full h-[calc(100vh-5.5rem)] object-cove -mt-[35.4rem] absolute"></div> */}
+                  </span>
 
 
-                <span className="">
-                  <a className="text-[0.8rem] hover:text-white/50 cursor-pointer transition duration-500 ease-linear">
-                    CREATIVE CHRONICLES
-                  </a>
-                  <h1 className="text-[2rem] leading-[2.2rem]">
-                    Digital Dreamscape
-                  </h1>
-                  <a className="text-[0.8rem] hover:text-white/50 border border-b-white/25 border-x-transparent border-t-transparent pb-2 cursor-pointer transition duration-500 ease-linear">
-                    LEARN MORE
-                  </a>
-                </span>
-              </span>
-
-              <span className="gap-[3rem] flex pb-10">
-                <span className="">
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    className="w-[95%] min-h- rounded-md object-cove relativ"
-                  >
-                    {/* max-h-[40rem] */}
-                    <source src={GirlsRunningThroughField} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-
-                  {/* <div className="backdrop-brightness-50 w-full h-[calc(100vh-5.5rem)] object-cove -mt-[35.4rem] absolute"></div> */}
-                </span>
-
-
-                <span className="">
-                  <a className="text-[0.8rem] hover:text-white/50 cursor-pointer transition duration-500 ease-linear">
-                    CREATIVE CHRONICLES
-                  </a>
-                  <h1 className="text-[2rem] leading-[2.2rem]">
-                    Digital Dreamscape
-                  </h1>
-                  <a className="text-[0.8rem] hover:text-white/50 border border-b-white/25 border-x-transparent border-t-transparent pb-2 cursor-pointer transition duration-500 ease-linear">
-                    LEARN MORE
-                  </a>
-                </span>
-              </span>
+                  <span className="">
+                    <a className="text-[0.8rem] hover:text-white/50 cursor-pointer transition duration-500 ease-linear">
+                      {item.title}
+                    </a>
+                    <h1 className="text-[2rem] leading-[2.2rem]">
+                      {item.heading}
+                    </h1>
+                    <a className="text-[0.8rem] hover:text-white/50 border border-b-white/25 border-x-transparent border-t-transparent pb-2 cursor-pointer transition duration-500 ease-linear">
+                      LEARN MORE
+                    </a>
+                  </span>
+                </div>
+              ))}
 
 
             </div>
