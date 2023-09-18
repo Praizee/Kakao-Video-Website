@@ -332,7 +332,7 @@ const MobileHome = () => {
         {/* end of hire us */}
 
         {/* our news */}
-        <div className="mb-12 block bg-black pt-28 pb-[15rem] mt-[rem]">
+        <div className="mb-12 block bg-black pt-28 pb-[rem] mt-[rem]">
           <div className="mx-4 mb-16 w-full text-white">
 
             <div className="">
@@ -378,7 +378,6 @@ const MobileHome = () => {
                   Exploring Color Grading
                 </h1>
               </a>
-
 
             </div>
 
