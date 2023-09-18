@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
-import BgVideo from "../assets/Kakao-Vids/Webflow - Kakao-main.mp4";
-import BestRecentWorkVideo from "../assets/Kakao-Vids/best-recent-works.mp4";
 import VRGamer from "../assets/Kakao-Vids/VRgamer.mp4";
 import SunsetBeach from "../assets/Kakao-Vids/Sunset-beach.mp4";
 import BalletDancer from "../assets/Kakao-Vids/Ballet-dancer.mp4";
@@ -26,10 +24,10 @@ const animationConfiguration = {
 const MobileHome = () => {
 
   const contentData = [
-    // {
-    //   title: "Creating An Effective Video Ad Campaign",
-    //   videoSource: VRGamer, // video source
-    // },
+    {
+      title: "Creating An Effective Video Ad Campaign",
+      videoSource: VRGamer, // video source
+    },
     {
       title: "Best Technologies In Video Production",
       videoSource: BalletDancer, // video source
@@ -143,30 +141,6 @@ const MobileHome = () => {
           <div className=" mb-28 mx-4 w-full h-[rem] text-white grid grid-cols-1 gap-1">
 
             {/* content and video on the right */}
-            <div className="col-span-1">
-              <span className="">
-                <p className="">
-                  /BEST RECENT WORK
-                </p>
-              </span>
-
-              <span className="flex gap-[10rem] mb-8">
-                <h1 className="text-[2.5rem] mt-8  font-medium leading-[3rem]">
-                  Creating An Effective Video Ad Campaign
-                </h1>
-              </span>
-
-              <video
-                autoPlay
-                loop
-                muted
-                className="w-[90%] h-[%]"
-              >
-                <source src={VRGamer} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-
             {contentData.map((item, index) => (
               <div className=" col-span-1 row-span-1" key={index}>
                 <span className="">
@@ -176,7 +150,7 @@ const MobileHome = () => {
                 </span>
 
                 <span className="flex gap-[10rem] mb-8">
-                  <h1 className="text-[3.5rem] mt-8  font-medium leading-[4rem]">
+                  <h1 className="text-[2.1rem] mt-8  font-medium leading-[3rem]">
                     {item.title}
                   </h1>
                 </span>
@@ -185,7 +159,7 @@ const MobileHome = () => {
                   autoPlay
                   loop
                   muted
-                  className="w-full"
+                  className="w-ful w-[90%]"
                 >
                   <source src={item.videoSource} type="video/mp4" />
                   Your browser does not support the video tag.
