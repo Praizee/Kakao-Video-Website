@@ -13,6 +13,7 @@ import FlowersAndReading from "../assets/Kakao-Vids/flowers and reading.mp4"
 import VRShooter from "../assets/Kakao-Vids/VR-shooter.mp4"
 import SnowStorm from "../assets/Kakao-Vids/snow-storm.mp4"
 import Eyes from "../assets/Kakao-Vids/eyes.mp4"
+import PlayButton from "../assets/Play-button.webp"
 import { PiArrowUpRightBold } from "react-icons/pi";
 import { PiArrowDownRightBold } from "react-icons/pi";
 
@@ -188,7 +189,10 @@ const MobileHome = () => {
         <div className="bg-black text-white">
           <div className="">
             <div className="mx-[rem] z-50 absolute">
-              <h1 className="text-[2.5rem] text-center w-[80%] mt-[10rem] leading-[3.2rem]">
+              <h1 className="text-[2.5rem] text-center w-[80%] mx-8 mt-[7rem] leading-[3.2rem]">
+                <span className="">
+                  <img src={PlayButton} className="border p-6 mx-auto mb-16 rounded-full" alt="play-button" />
+                </span>
                 Your Amazing Video Watching Adventure!
               </h1>
             </div>
@@ -204,16 +208,17 @@ const MobileHome = () => {
               Your browser does not support the video tag.
             </video>
 
-            <div className="backdrop-brightness-50 border w-full h-[40%] -mt-[35.4rem] absolute left-0"></div>
+            <div className="backdrop-brightness-50 w-full h-[35rem] -mt-[35rem] absolute left-0"></div>
           </div>
         </div>
         {/* end of amazing video-watching adventure */}
 
-        {/* our works */}
-        <div className="my- border border-white/25 border-x-transparent  flex bg-black pt-28 mt-[rem] mb-0">
-          <div className="mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
+        {/* our work */}
+        <div className="my-  bg-black pt-28 mt-[rem] mb-0">
+          {/* border border-white/25 border-x-transparent */}
+          <div className=" mb-16 w-full h-[22.2rem]  text-white border-white/25 border-t-transparent border-x-transparent">
 
-            <div className="grid grid-cols-1 gap-8">
+            <div className="grid grid-cols-1 gap-8 mx-4 ">
               <span className="mr-[rem]">
                 <p className="text-">
                   /OUR WORK
@@ -221,13 +226,13 @@ const MobileHome = () => {
               </span>
 
               {worksData.map((item, index) => (
-                <div className="gap-[3rem] justify-between flex pb-10" key={index}>
+                <div className="gap-[3rem] pb-10" key={index}>
                   <span className="">
                     <video
                       autoPlay
                       loop
                       muted
-                      className="w-[%] min-h- rounded-md object-cover relativ"
+                      className="w-full min-h-[20rem] mb-8 rounded-lg object-cover relativ"
                     >
                       {/* max-h-[40rem] */}
                       <source src={item.videoSource} type="video/mp4" />
@@ -240,7 +245,7 @@ const MobileHome = () => {
                     <a className="text-[0.8rem] hover:text-white/50 cursor-pointer transition duration-500 ease-linear">
                       {item.title}
                     </a>
-                    <h1 className="text-[2rem] leading-[2.2rem]">
+                    <h1 className="text-[1.7rem] py-4 leading-[2.2rem]">
                       {item.heading}
                     </h1>
                     <a className="text-[0.8rem] hover:text-white/50 border border-b-white/25 border-x-transparent border-t-transparent pb-2 cursor-pointer transition duration-500 ease-linear">
@@ -256,38 +261,38 @@ const MobileHome = () => {
         {/* end of our works */}
 
         {/* maquee text */}
-        <div className="text-white bg-black py-8 my-">
+        <div className="text-white bg-black py-8 block mt-[80rem]">
           <Marquee loop={0} pauseOnHover>
-            <ul className="flex gap-4 text-[4rem]">
-              <li className="text-[8rem]">
+            <ul className="flex gap-4 text-[3rem]"> &nbsp;
+              <li className="text-[3rem]">
                 Video
               </li>
-              <span className="my-12 text-[4rem]"> • </span>
-              <li className="text-outline text-[8rem]">
+              <span className="my-5 text-[1.5rem]"> • </span>
+              <li className="text-outline text-[3rem]">
                 Imagination
               </li>
-              <span className="my-12 text-[4rem]"> • </span>
-              <li className="text-[8rem]">
+              <span className="my-5 text-[1.5rem]"> • </span>
+              <li className="text-[3rem]">
                 Video
               </li>
-              <span className="my-12 text-[4rem]"> • </span>
+              <span className="my-5 text-[1.5rem]"> • </span>
             </ul>
           </Marquee>
 
           <Marquee loop={0} pauseOnHover delay={30}>
-            <ul className="flex gap-4 text-[4rem]">
-              <li className="text-outline text-[8rem]">
+            <ul className="flex gap-4 text-[3rem]"> &nbsp;
+              <li className="text-outline text-[3rem]">
                 Imagination
               </li>
-              <span className="my-12 text-[4rem]"> • </span>
-              <li className="text-[8rem]">
+              <span className="my-5 text-[1.5rem]"> • </span>
+              <li className="text-[3rem]">
                 Video
               </li>
-              <span className="my-12 text-[4rem]"> • </span>
-              <li className="text-outline text-[8rem]">
+              <span className="my-5 text-[1.5rem]"> • </span>
+              <li className="text-outline text-[3rem]">
                 Imagination
               </li>
-              <span className="my-12 text-[4rem]"> • </span>
+              <span className="my-5 text-[1.5rem]"> • </span>
             </ul>
           </Marquee>
         </div>
@@ -296,14 +301,17 @@ const MobileHome = () => {
         {/* hire us */}
         <div className="bg-black text-white">
           <div className="">
-            <div className="mx-[5rem] mt-[7.5rem] z-50 absolute">
-              <h1 className="text-[3rem] mb-10 leading-[3.2rem]">
+            <div className="mx-5 mt-[7.5rem] z-50 absolute">
+              <h1 className="text-[2.5rem] mb-10 text-center leading-[3.2rem]">
                 Let's Create Smile-Worthy
                 Digital Content Together.
               </h1>
-              <p className="">
+              <p className="text-center text-white/75">
                 Get ready to unlock the power of visual storytelling and take your video
                 journey to new heights. Join us today and let your videos shine on Kakao!
+              </p>
+              <p className="uppercase text-[0.875rem] mt-20 mx-[9rem] text-center py-12 px- w-[40%] rotate-45 hover:rotate-0 transition ease-linear border rounded-full">
+                Hire us!
               </p>
             </div>
 
@@ -318,7 +326,7 @@ const MobileHome = () => {
               Your browser does not support the video tag.
             </video>
 
-            <div className="backdrop-brightness-50 w-full h-screen object-cover absolute -mt-[40.9rem]"></div>
+            <div className="backdrop-brightness-50 w-full h-screen object-cover absolute -mt-[47.7rem]"></div>
           </div>
         </div>
         {/* end of hire us */}
