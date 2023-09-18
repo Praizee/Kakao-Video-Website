@@ -94,7 +94,7 @@ const Home = () => {
             </p>
           </div>
           <div className="laptop:hidden block">
-            <h1 className="mt-[12rem] mb-16 text-center text-[3.5rem] mx-2 leading-[4rem] font-black">
+            <h1 className="mt-[12rem] mb-14 text-center text-[3.5rem] mx-2 leading-[4rem] font-black">
               YOUR <br /> VIDEO WORLD
             </h1>
 
@@ -107,7 +107,7 @@ const Home = () => {
         </div>
 
         {/* Mobile Home */}
-        {/* <MobileHome /> */}
+        <MobileHome />
         {/* end of Mobile Home */}
 
         {/* our services */}
