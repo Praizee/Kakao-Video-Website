@@ -358,7 +358,7 @@ const Home = () => {
         {/* end of marquee text */}
 
         {/* hire us */}
-        <div className="bg-black text-white">
+        <div className="bg-black hidden laptop:block tablet:block text-white">
           <div className="">
             <div className="laptop:mx-[5rem] mt-[7.5rem] z-50 absolute">
               <h1 className="text-[3rem] mb-10 leading-[3.2rem]">
@@ -388,7 +388,7 @@ const Home = () => {
         {/* end of hire us */}
 
         {/* our news */}
-        <div className="mb-12  laptop:block bg-black pt-28 pb-[15rem] laptop:mt-[rem] laptop:mb-0 mx-4 laptop:mx-0">
+        <div className="mb-12 tablet:block hidden laptop:block bg-black pt-28 pb-[15rem] laptop:mt-[rem] laptop:mb-0 mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
             <div className="flex relative justify-betwee gap-[rem] mr-[rem]">
