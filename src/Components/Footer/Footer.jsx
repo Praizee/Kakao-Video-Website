@@ -9,7 +9,7 @@ const Footer = () => {
 
   return (
     <div className="bg-[black] text-white ">
-      <footer className="footer laptop:p-10 laptop:pt-20 p-6 max-w-[90%] laptop:mx-[5.7rem] mx-0">
+      <footer className="footer laptop:p-10 laptop:pt-20 pt-16 p-6 max-w-[90%] laptop:mx-[5.7rem] mx-0">
         <div className="laptop:-mr-[9rem] laptop:-ml-10">
 
           <div className="tablet:hidde laptop:min-w-[26rem] tablet:min-w-[19rem] laptop:block">
