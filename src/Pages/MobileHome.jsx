@@ -80,8 +80,8 @@ const MobileHome = () => {
         <div className="backdrop-brightness-50 w-full h-screen object-cover absolute top-0 left-0"></div>
 
         {/* our services */}
-        <div className="my-3 block laptop:flex bg-black pt-28 laptop:mt-[11.91rem] laptop:mb-0 mx-0 laptop:mx-0">
-          <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
+        <div className="my-3 block bg-black pt-28 mt-[11.91rem] mb-0 mx-0">
+          <div className="mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
             <div className="flex gap-[rem] justify-between">
               <span className="">
@@ -138,8 +138,8 @@ const MobileHome = () => {
         {/* our services */}
 
         {/* best recent work */}
-        <div className="  laptop:flex bg-black pt-28 laptop:mb-0 mx-4 laptop:mx-0">
-          <div className="laptop:mx-[5.5rem] mb-28 w-full h-[rem] text-white grid grid-cols-2 gap-16">
+        <div className="  flex bg-black pt-28 mb-0 mx-4 mx-0">
+          <div className="mx-[5.5rem] mb-28 w-full h-[rem] text-white grid grid-cols-2 gap-16">
             {/* gap-24 */}
             {/* video on the left */}
             <div className=" col-span-1">
@@ -217,7 +217,7 @@ const MobileHome = () => {
         {/* amazing video-watching adventure */}
         <div className="bg-black text-white">
           <div className="">
-            <div className="laptop:mx-[5rem] z-50 absolute">
+            <div className="mx-[5rem] z-50 absolute">
               <h1 className="text-[3rem] mt-[10rem] leading-[3.4rem]">
                 GET READY TO GO <br />
                 ON AN AMAZING <br />
@@ -243,8 +243,8 @@ const MobileHome = () => {
         {/* end of amazing video-watching adventure */}
 
         {/* our works */}
-        <div className="my- border border-white/25 border-x-transparent  laptop:flex bg-black pt-28 laptop:mt-[rem] laptop:mb-0 mx-4 laptop:mx-0">
-          <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
+        <div className="my- border border-white/25 border-x-transparent  flex bg-black pt-28 mt-[rem] mb-0 mx-4 mx-0">
+          <div className="mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
             <div className="grid grid-cols-2 gap-8">
               <span className="mr-[rem]">
@@ -329,7 +329,7 @@ const MobileHome = () => {
         {/* hire us */}
         <div className="bg-black text-white">
           <div className="">
-            <div className="laptop:mx-[5rem] mt-[7.5rem] z-50 absolute">
+            <div className="mx-[5rem] mt-[7.5rem] z-50 absolute">
               <h1 className="text-[3rem] mb-10 leading-[3.2rem]">
                 Let's Create Smile-Worthy <br />
                 Digital Content Together.
@@ -357,8 +357,8 @@ const MobileHome = () => {
         {/* end of hire us */}
 
         {/* our news */}
-        <div className="mb-12  laptop:block bg-black pt-28 pb-[15rem] laptop:mt-[rem] laptop:mb-0 mx-4 laptop:mx-0">
-          <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
+        <div className="mb-12  block bg-black pt-28 pb-[15rem] mt-[rem] mb-0 mx-4 mx-0">
+          <div className="mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
             <div className="flex relative justify-betwee gap-[rem] mr-[rem]">
               <div className="w-full">
