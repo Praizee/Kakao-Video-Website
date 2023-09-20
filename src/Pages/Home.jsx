@@ -60,7 +60,7 @@ const Home = () => {
   ];
 
   return (
-    <section className="text-black bg-white">
+    <section className="bg-black text-white">
       <motion.div
         variants={animationConfiguration}
         initial="initial"
@@ -111,7 +111,7 @@ const Home = () => {
         {/* end of Mobile Home */}
 
         {/* our services */}
-        <div className="my-3 hidden tablet:flex laptop:flex bg-black pt-28 laptop:mt-[11.91rem] laptop:mb-0 mx-4 laptop:mx-0">
+        <div className="my-3 hidden tablet:flex laptop:flex bg-black tablet:pt-[31rem] laptop:pt-28 laptop:mt-[11.91rem] laptop:mb-0 mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
             <div className="flex gap-[rem] justify-between">
@@ -257,18 +257,20 @@ const Home = () => {
               </h1>
             </div>
 
-            <video
-              autoPlay
-              loop
-              muted
-              className="w-full max-h-[calc(100vh-5.5rem)] object-cover relative"
-            >
-              {/* max-h-[40rem] */}
-              <source src={RunningThroughField} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <div>
+              <video
+                autoPlay
+                loop
+                muted
+                className="w-full max-h-[calc(100vh-5.5rem)] object-cover relative"
+              >
+                {/* max-h-[40rem] */}
+                <source src={RunningThroughField} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
 
-            <div className="backdrop-brightness-50 w-full h-[calc(100vh-5.5rem)] object-cove -mt-[35.4rem] absolute left-0"></div>
+              <div className="backdrop-brightness-50 w-full h-[calc(100vh-5.5rem)] object-cover laptop:-mt-[35.4rem] tablet:-mt-[35rem] absolute left-0"></div>
+            </div>
           </div>
         </div>
         {/* end of amazing video-watching adventure */}
@@ -319,7 +321,7 @@ const Home = () => {
         </div>
         {/* end of our works */}
 
-        {/* maquee text */}
+        {/* marquee text */}
         <div className="text-white hidden laptop:block tablet:block bg-black py-8 my-">
           <Marquee loop={0} pauseOnHover>
             <ul className="flex gap-4 text-[4rem]">
@@ -382,7 +384,7 @@ const Home = () => {
               Your browser does not support the video tag.
             </video>
 
-            <div className="backdrop-brightness-50 w-full h-screen object-cover absolute -mt-[40.9rem]"></div>
+            <div className="backdrop-brightness-50 w-full h-screen object-cover absolute laptop:-mt-[40.9rem] tablet:-mt-[40.4rem]"></div>
           </div>
         </div>
         {/* end of hire us */}
@@ -460,7 +462,7 @@ const Home = () => {
             <source src={SnowyPeaks} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="backdrop-brightness-75 w-full h-[25.1rem] object-cover -mt-[25rem] absolute"></div>
+          <div className="backdrop-brightness-75 w-full h-[25rem] object-cover -mt-[25rem] absolute"></div>
         </div>
         {/* end snowy peak video */}
 
