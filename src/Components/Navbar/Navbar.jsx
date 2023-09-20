@@ -4,6 +4,8 @@ import { NavbarData } from "./NavbarData.jsx"
 import KakaoLogo from "../../assets/New Kakao Logo.svg"
 import { PiArrowUpRightBold } from "react-icons/pi";
 import MultiLevelSidebar from "../../Components/SideBar/SideBar"
+// https://www.material-tailwind.com/docs/react/sidebar
+// https://www.material-tailwind.com/docs/react/guide/vite
 
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false)
