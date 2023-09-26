@@ -7,7 +7,7 @@ import VRGamer from "../assets/Kakao-Vids/VRgamer.mp4";
 import SunsetBeach from "../assets/Kakao-Vids/Sunset-beach.mp4";
 import BalletDancer from "../assets/Kakao-Vids/Ballet-dancer.mp4";
 import SunsetWithMountains from "../assets/Kakao-Vids/sunset-with-mountain.webm"
-import RunningThroughField from "../assets/Kakao-Vids/woman-running-through-field.mp4"
+import RunningThroughField from "../assets/Kakao-Vids/woman-running-through-field-02.mp4"
 import SnowyPeaks from "../assets/Kakao-Vids/snowy-peaks.mp4"
 import GirlsRunningThroughField from "../assets/Kakao-Vids/girls-running-through-field.mp4"
 import ExcitedVRLady from "../assets/Kakao-Vids/excited-vr-lady.mp4"
@@ -111,7 +111,8 @@ const Home = () => {
         {/* end of Mobile Home */}
 
         {/* our services */}
-        <div className="my-3 hidden tablet:flex laptop:flex bg-black tablet:pt-[31rem] laptop:pt-28 laptop:mt-[11.91rem] laptop:mb-0 mx-4 laptop:mx-0">
+        <div id="services"
+          className="my-3 hidden tablet:flex laptop:flex bg-black tablet:pt-[31rem] laptop:pt-[12rem] laptop:mt-[11.91rem] laptop:mb-0 mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
             <div className="flex gap-[rem] justify-between">
@@ -169,7 +170,7 @@ const Home = () => {
         {/* our services */}
 
         {/* best recent work */}
-        <div className=" hidden tablet:flex laptop:flex bg-black pt-28 laptop:mb-0 mx-4 laptop:mx-0">
+        <div className=" hidden tablet:flex laptop:flex bg-black pt-28 pb-10 laptop:mb-0 mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-28 w-full h-[rem] text-white grid grid-cols-2 gap-16">
             {/* gap-24 */}
             {/* video on the left */}
@@ -269,14 +270,16 @@ const Home = () => {
                 Your browser does not support the video tag.
               </video>
 
-              <div className="backdrop-brightness-50 w-full h-[calc(100vh-5.5rem)] object-cover laptop:-mt-[35.4rem] tablet:-mt-[35rem] absolute left-0"></div>
+              <div className="backdrop-brightness-50 w-full h-[calc(100vh-5.5rem)] object-cover laptop:-mt-[41.8rem] tablet:-mt-[35rem] absolute left-0"></div>
+              {/* laptop:-mt-[35.4rem] */}
             </div>
           </div>
         </div>
         {/* end of amazing video-watching adventure */}
 
         {/* our works */}
-        <div className="pb-24 border border-white/25 border-x-transparent hidden tablet:flex laptop:flex bg-black pt-28 laptop:mt-[rem] laptop:mb-0 mx-4 laptop:mx-0">
+        <div id="works"
+          className="pb-24 border border-white/25 border-x-transparent hidden tablet:flex laptop:flex bg-black pt-28 laptop:mt-[rem] laptop:mb-0 mx-4 laptop:mx-0">
           <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
 
             <div className="grid grid-cols-2 gap-8">
@@ -360,7 +363,8 @@ const Home = () => {
         {/* end of marquee text */}
 
         {/* hire us */}
-        <div className="bg-black hidden laptop:block tablet:block text-white">
+        <div id="about"
+          className="bg-black hidden laptop:block tablet:block text-white">
           <div className="">
             <div className="laptop:mx-[5rem] mt-[7.5rem] z-50 absolute">
               <h1 className="text-[3rem] mb-10 leading-[3.2rem]">
@@ -384,75 +388,13 @@ const Home = () => {
               Your browser does not support the video tag.
             </video>
 
-            <div className="backdrop-brightness-50 w-full h-screen object-cover absolute laptop:-mt-[40.9rem] tablet:-mt-[40.4rem]"></div>
+            {/* <div className="backdrop-brightness-50 w-full h-screen object-cover absolute laptop:-mt-[40.9rem] tablet:-mt-[40.4rem]"></div> */}
           </div>
         </div>
         {/* end of hire us */}
 
-        {/* our news */}
-        <div className="mb-12 tablet:block hidden laptop:block bg-black pt-28 pb-[15rem] laptop:mt-[rem] laptop:mb-0 mx-4 laptop:mx-0">
-          <div className="laptop:mx-[5.5rem] mb-16 w-full h-[22.2rem]  text-white">
-
-            <div className="flex relative justify-betwee gap-[rem] mr-[rem]">
-              <div className="w-full">
-                <p className="w-full">
-                  /OUR NEWS
-                </p>
-              </div>
-
-              <div className="w-">
-                <a className="flex text-[2rem] border uppercase border-y-white/25 border-x-transparent py-12">
-                  <h1 className="font-medium leading-[3.6rem]">
-                    6.17.23
-                  </h1>
-                  <span className="border border-white/25 flex w-16 h-0 p-0 mx-8 my-6 absolut"></span>
-                  <Marquee pauseOnHover loop={0}>
-                    <h1 className="font-medium text-[2rem] leading-[3.6rem]">
-                      Measuring Video Success&nbsp;•&nbsp;Measuring Video Success&nbsp;•&nbsp;
-                    </h1>
-                  </Marquee>
-                </a>
-                <a className="flex text-[2rem] gap-[6rem] border uppercase border-y-white/25 border-x-transparent py-12">
-                  <h1 className="font-medium leading-[3.6rem]">
-                    6.12.23
-                  </h1>
-                  <Marquee pauseOnHover>
-                    <h1 className="font-medium text-[2rem] leading-[3.6rem]">
-                      Virtual Reality and Video&nbsp;•&nbsp;Virtual Reality and Video&nbsp;•&nbsp;
-                    </h1>
-                  </Marquee>
-                </a>
-                <a className="flex text-[2rem] gap-[6rem] border uppercase border-y-white/25 border-x-transparent py-12">
-                  <h1 className="font-medium leading-[3.6rem]">
-                    6.8.23
-                  </h1>
-                  <Marquee pauseOnHover>
-                    <h1 className="font-medium text-[2rem] leading-[3.6rem]">
-                      Capturing Aerial Perspectives&nbsp;•&nbsp;Capturing Aerial Perspectives&nbsp;•&nbsp;
-                    </h1>
-                  </Marquee>
-                </a>
-                <a className="flex text-[2rem] gap-[6rem] border uppercase border-y-white/25 border-x-transparent py-12">
-                  <h1 className="font-medium leading-[3.6rem]">
-                    6.1.23
-                  </h1>
-                  <Marquee pauseOnHover>
-                    <h1 className="font-medium text-[2rem] leading-[3.6rem]">
-                      Exploring Color Grading&nbsp;•&nbsp;Exploring Color Grading&nbsp;•&nbsp;
-                    </h1>
-                  </Marquee>
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-        {/* end of our news */}
-
         {/* snowy peak video */}
-        <div className="hidden laptop:block tablet:block">
+        <div className="hidden laptop:block mt-20 tablet:block">
           <video
             autoPlay
             loop
