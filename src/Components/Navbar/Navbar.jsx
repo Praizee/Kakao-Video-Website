@@ -51,13 +51,10 @@ const Navbar = () => {
 
             return (
               <li key={index} className="">
-                <NavLink
-                  to={item.path}
-                  className={({ isActive }) =>
-                    isActive
-                      ? 'flex min-w-max rounded-none font-almostsemibold mx-3 py-3 px-3'
-                      : 'flex min-w-max rounded-none font-almostsemibold mx-3 py-3 px-3'
-                  }
+                {/* Use anchor tags with href attributes */}
+                <a
+                  href={`#${item.path}`} // Set the href to the corresponding section ID
+                  className='flex min-w-max rounded-none font-almostsemibold mx-3 py-3 px-3'
                 >
                   <div className="dropdown dropdown-hover">
                     <label tabIndex={0} className={item.className}>
@@ -68,15 +65,14 @@ const Navbar = () => {
                       <ul
                         tabIndex={0}
                         className={`dropdown-content z-[1] menu 
-                        p-2 my-8 shadow bg-black border border-white rounded-box w-52 
-                        ${item.content.length === 24
-                            ? 'grid grid-cols-3 gap-2 w-[32rem]' : ''
-                          }`}
+                  p-2 my-8 shadow bg-black border border-white rounded-box w-52 
+                  ${item.content.length === 24 ? 'grid grid-cols-3 gap-2 w-[32rem]' : ''}`}
                       >
                         {item.content.map((contentItem, contentIndex) => (
                           <li key={contentIndex}>
                             <a className={item.dropdownclass}>
-                              <span className="block text-[0.75rem]">{/* Wrap content in a block-level element */}
+                              <span className="block text-[0.75rem]">
+                                {/* Wrap content in a block-level element */}
                                 {contentItem}
                               </span>
                             </a>
@@ -85,13 +81,13 @@ const Navbar = () => {
                       </ul>
                     )}
                   </div>
-                </NavLink>
+                </a>
               </li>
             );
           })}
-
         </ul>
       </div>
+
 
       <div className="navbar-end">
         <div className="">
@@ -108,26 +104,30 @@ const Navbar = () => {
           {/* end of hamburger menu */}
 
           {/* mobile navbar */}
-          {showNav &&
-            <MultiLevelSidebar />
-          }
+          {showNav && <ul tabIndex={0} className="absolute w-max h-max p-12 -ml-[20.7rem] mt-2 border border-t-2 z-[10] bg-black">
+            {/* dropdown-content */}
+            {NavbarData.map((item, index) => {
+              return (
+                <li key={index} className="">
+                  {/* "flex min-w-max p-4" */}
+                  <NavLink to={item.path} className={({ isActive }) =>
+                    isActive ? 'flex min-w-max ' : 'flex rounded-none min-w-max'
+                  }>
+                    <span className="p-4 my-8  text-white bg-transparent hover:bg-transparent mx-1 btn">
+                      {item.title}
+                    </span>
+                  </NavLink>
+                </li>
+              );
+            })}
+          </ul>}
           {/* end of mobile navbar */}
         </div>
       </div>
 
-      <div className="navbar-end laptop:mr-[5rem] text-white hidden laptop:block">
-        <span className="">
-          <button className="btn bg-transparent text-white hover:bg-transparent font-almostsemibold border uppercase rounded-full transition duration-300 ease-linear hover:shadow-[0_.5px_8px_white]">
-            Get In Touch
-            <span className="">
-              {/* hover:-translate-y-2 */}
-              <PiArrowUpRightBold size={15} />
-            </span>
-          </button>
-        </span>
-      </div>
 
-    </div >
+
+    </div>
 
   );
 };
